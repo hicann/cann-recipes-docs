@@ -280,7 +280,12 @@ static_meta_infos.md 定义字段
 | `cann-recipes` | CANN Recipes | CANN Recipes |
 | `torchtitan` | TorchTitan | TorchTitan |
 | `megatron` | Megatron | Megatron |
+| `mindspeed` | MindSpeed | MindSpeed |
+| `verl` | verl | verl |
+| `vllm` | vLLM | vLLM |
+| `mindspore` | MindSpore | MindSpore |
 
+- `frameworks` 仅限上层专用框架，不考虑底层基础框架；添加前考证其概念层级。
 - 若正文未提供明确的框架或工具链信息，省略 `frameworks` 字段。
 
 ### 4.8 `cover`

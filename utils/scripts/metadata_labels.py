@@ -72,8 +72,9 @@ VALUE_LABELS = {
         "mindspore": {"en": "MindSpore", "zh": "MindSpore"},
         "torchtitan": {"en": "TorchTitan", "zh": "TorchTitan"},
         "megatron": {"en": "Megatron", "zh": "Megatron"},
-        "onnx": {"en": "ONNX", "zh": "ONNX"},
-        "atb": {"en": "ATB", "zh": "ATB"},
+        "mindspeed": {"en": "MindSpeed", "zh": "MindSpeed"},
+        "verl": {"en": "verl", "zh": "verl"},
+        "vllm": {"en": "vLLM", "zh": "vLLM"},
     },
     "cover.type": {
         "auto": {"en": "Auto cover", "zh": "自动封面"},

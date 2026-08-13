@@ -89,8 +89,9 @@ class Framework(StrEnum):
     MINDSPORE = "mindspore"
     TORCHTITAN = "torchtitan"
     MEGATRON = "megatron"
-    ONNX = "onnx"
-    ATB = "atb"
+    MINDSPEED = "mindspeed"
+    VERL = "verl"
+    VLLM = "vllm"
 
 
 class CoverType(StrEnum):
