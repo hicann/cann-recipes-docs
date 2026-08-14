@@ -19,7 +19,7 @@
 - 新增或更新文档前阅读 `skill/new_document_skill.md`。
 - 中文文档翻译为英文时阅读 `skill/translate_english_document_skill.md`，正文重点参考其中链接的官方 CANN translation skill。
 - 翻译必须保持原文内容、结构、代码、表格、图片和链接语义一致，不得删减或扩写。
-- 英文文档优先使用官方英文网页链接；没有对应英文页面时保留中文链接并标记 `(Chiniese)`。
+- 英文文档优先使用官方英文网页链接；没有对应英文页面时保留中文链接并标记 `(Chinese)`。
 - 新增模型或专题后，必须在根目录 `README.md` 对应分类的样例列表中增加不重复且有效的中文文档入口。
 
 ## `static-meta`
