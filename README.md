@@ -58,6 +58,7 @@
 
 **大语言模型**
 
+- [DeepSeek-R1](infer/llm/deepseek_r1/zh/deepseek_r1_decode_optimization.md)
 
 **多模态生成**
 
