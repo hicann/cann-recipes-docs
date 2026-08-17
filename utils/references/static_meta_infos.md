@@ -329,27 +329,25 @@ static_meta_infos.md 定义字段
 
 ### 4.10 `multimodalDitCache`
 
-`multimodalDitCache` 仅用于 `infer/multimodal/**` 文档，描述多模态生成或理解任务中 DiT 结构相关的缓存复用方案。
+`multimodalDitCache` 仅用于 `infer/multimodal/**` 文档，描述多模态生成或理解任务中 DiT 结构相关的缓存复用方案。取值与 `cann-recipes-infer` 启动 YAML 中 `dit_cache.method` 的方法名一致。
 
 | ID | 英文名称 | 中文名称 | 含义 |
 |---|---|---|---|
-| `dit-block-cache` | DiT Block Cache | DiT Block Cache | 复用 DiT block 级中间结果 |
-| `attention-cache` | Attention Cache | Attention Cache | 复用 Attention 或 KV 相关中间结果 |
-| `feature-cache` | Feature Cache | Feature Cache | 复用 latent、feature map 或 token feature |
-| `teacache` | TeaCache | TeaCache | TeaCache 类 timestep-aware 缓存方案 |
-| `magcache` | MagCache | MagCache | MagCache 类幅值/变化量感知缓存方案 |
-| `none` | None | 未涉及 DiT Cache | 文档不涉及该类方案 |
+| `None` | None | None | 不启用 DiT Cache（基线） |
+| `FBCache` | FBCache | FBCache | Full Block Cache：缓存整个 DiT block 输出，按 L1 距离阈值决定是否复用 |
+| `TeaCache` | TeaCache | TeaCache | 用 timestep embedding 估计输出差异、多项式缩放校正的 timestep-aware 缓存 |
+| `TaylorSeer` | TaylorSeer | TaylorSeer | 用泰勒展开预测当前步输出、一跳多步的缓存 |
 
 规则：
 
 - 只在 `infer/multimodal/**` 文档中填写；当前仓库目录使用 `multimodal`，不使用 `multimodel` 拼写。
-- 如果正文只泛泛提到缓存，但没有说明 DiT 结构或多模态生成链路中的缓存复用，则忽略此字段。
-- 如果文档实现的是未命名的 DiT block 级缓存，使用 `dit-block-cache`；只有明确提到 TeaCache、MagCache 时才使用对应专名。
+- 只有正文明确提到某个 DiT Cache 方法时才填写对应 ID；多方法并存时多选。
+- 正文只是模糊涉及缓存、没有明确提到任何方法时，填 `None`。
 
 示例：
 
 ```json
-"multimodalDitCache": ["dit-block-cache", "teacache"]
+"multimodalDitCache": ["FBCache", "TeaCache"]
 ```
 
 ## 5. 构建校验与前端使用

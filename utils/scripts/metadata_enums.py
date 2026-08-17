@@ -111,14 +111,12 @@ class LlmSpeculativeInference(StrEnum):
 
 
 class MultimodalDitCache(StrEnum):
-    """DiT cache approaches for infer/multimodal reports."""
+    """DiT cache methods for infer/multimodal reports."""
 
-    DIT_BLOCK_CACHE = "dit-block-cache"
-    ATTENTION_CACHE = "attention-cache"
-    FEATURE_CACHE = "feature-cache"
-    TEACACHE = "teacache"
-    MAGCACHE = "magcache"
-    NONE = "none"
+    NO_CACHE = "None"
+    FB_CACHE = "FBCache"
+    TEACACHE = "TeaCache"
+    TAYLOR_SEER = "TaylorSeer"
 
 
 def enum_values(enum_class: type[StrEnum]) -> set[str]:

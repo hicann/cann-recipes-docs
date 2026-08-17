@@ -89,12 +89,10 @@ VALUE_LABELS = {
         "none": {"en": "None", "zh": "未涉及投机推理"},
     },
     "multimodalDitCache": {
-        "dit-block-cache": {"en": "DiT Block Cache", "zh": "DiT Block Cache"},
-        "attention-cache": {"en": "Attention Cache", "zh": "Attention Cache"},
-        "feature-cache": {"en": "Feature Cache", "zh": "Feature Cache"},
-        "teacache": {"en": "TeaCache", "zh": "TeaCache"},
-        "magcache": {"en": "MagCache", "zh": "MagCache"},
-        "none": {"en": "None", "zh": "未涉及 DiT Cache"},
+        "None": {"en": "None", "zh": "None"},
+        "FBCache": {"en": "FBCache", "zh": "FBCache"},
+        "TeaCache": {"en": "TeaCache", "zh": "TeaCache"},
+        "TaylorSeer": {"en": "TaylorSeer", "zh": "TaylorSeer"},
     },
 }
 
