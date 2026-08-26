@@ -267,6 +267,7 @@ static_meta_infos.md 定义字段
 |---|---|---|
 | `atlas-a2` | Atlas A2 / Ascend 910B | Atlas A2 / Ascend 910B |
 | `atlas-a3` | Atlas A3 | Atlas A3 |
+| `atlas-310p` | Atlas 310P | Atlas 310P |
 | `ascend-950` | Ascend 950 | Ascend 950 |
 
 若正文未提供明确的硬件适配或验证信息，省略 `hardware` 字段。

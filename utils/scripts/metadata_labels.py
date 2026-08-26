@@ -65,6 +65,7 @@ VALUE_LABELS = {
     "hardware": {
         "atlas-a2": {"en": "Atlas A2 / Ascend 910B", "zh": "Atlas A2 / Ascend 910B"},
         "atlas-a3": {"en": "Atlas A3", "zh": "Atlas A3"},
+        "atlas-310p": {"en": "Atlas 310P", "zh": "Atlas 310P"},
         "ascend-950": {"en": "Ascend 950", "zh": "Ascend 950"},
     },
     "frameworks": {

@@ -79,6 +79,7 @@ class Hardware(StrEnum):
 
     ATLAS_A2 = "atlas-a2"
     ATLAS_A3 = "atlas-a3"
+    ATLAS_310P = "atlas-310p"
     ASCEND_950 = "ascend-950"
 
 
