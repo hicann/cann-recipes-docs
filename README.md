@@ -60,11 +60,28 @@
 
 - [DeepSeek-R1](infer/llm/deepseek_r1/zh/deepseek_r1_decode_optimization.md)
 - [DeepSeek-V3.2-Exp](infer/llm/deepseek_v3_2_exp/zh/deepseek_v3.2_exp_inference_guide.md)
+- [DeepSeek-V4](infer/llm/deepseek_v4/zh/deepseek_v4_inference_guide.md)
+- [GPT-OSS](infer/llm/gpt_oss/zh/gpt_oss_optimization.md)
+- [Hy3](infer/llm/hy3/zh/hy3_optimization.md)
+- [Kimi-K2-Thinking](infer/llm/kimi_k2_thinking/zh/kimi_k2_thinking_inference_guide.md)
+- [Kimi K3](infer/llm/kimi_k3/zh/kimi_k3_inference_guide.md)
+- [LongCat-2.0](infer/llm/longcat_2_0/zh/longcat_2.0_optimization.md)
+- [LongCat-Flash](infer/llm/longcat_flash/zh/longcat_flash_optimization.md)
+- [Qwen Dense](infer/llm/qwen/zh/qwen_dense_optimization.md)
+- [Qwen3-MoE](infer/llm/qwen3_moe/zh/qwen3_moe_optimization.md)
 
 **多模态生成**
 
+- [daVinci-MagiHuman](infer/multimodal/davinci_magihuman/zh/davinci-magihuman_optimization.md)
+- [HunyuanImage-3.0](infer/multimodal/hunyuan_image_3/zh/hunyuan_image_3_optimization.md)
+- [HunyuanVideo](infer/multimodal/hunyuan_video/zh/hunyuan_video_optimization.md)
+- [SANA-Video](infer/multimodal/sana_video/zh/SANA-Video_optimization.md)
+- [Wan2.2-I2V](infer/multimodal/wan2_2_i2v/zh/wan2.2-i2v_optimization.md)
+
 
 **推荐系统**
+
+- [HSTU](infer/recommendation/hstu/zh/hstu_optimization.md)
 
 
 ### 训练
@@ -78,8 +95,14 @@
 
 **预训练**
 
+- [DeepSeek-V3](train/pretrain/deepseek_v3/zh/deepseek-v3_pre_train_hif8_mxfp8.md)
+- [DeepSeek-V3.2](train/pretrain/deepseek_v32/zh/deepseek-v32_pre_train_optimization.md)
+- [DeepSeek-V4](train/pretrain/deepseek_v4/zh/deepseek-v4_torchtitan_npu_autofuse.md)
 
 **强化学习**
+
+- [DeepSeek-R1](train/rl/deepseek/zh/deepseek_rl_train_optimization.md)
+- [Qwen3](train/rl/qwen3/qwen3_235B/zh/qwen3_235B_32k_longseq_rl_train_optimization.md)
 
 
 ### 具身智能
@@ -95,14 +118,22 @@
 
 **3D 视觉**
 
+- [3DGS](embodied_ai/3d_vision/gaussian_splatting/zh/gaussian_splatting_alpha_blending_optimization.md)
+- [Hunyuan3D](embodied_ai/3d_vision/hunyuan3d/zh/Hunyuan3D_optimization.md)
+- [VGGT](embodied_ai/3d_vision/vggt/zh/vggt_optimization.md)
 
 **机械臂操作**
 
+- [GR00T N1.6](embodied_ai/manipulation/groot_n1_6/zh/groot_n1_6_optimization.md)
+- [Pi0](embodied_ai/manipulation/pi0/zh/pi0_infer_with_torch.md)
 
 **导航**
 
+- [Alpamayo-R1](embodied_ai/navigation/alpamayo_r1/zh/alpamayo_r1_optimization.md)
 
 **世界模型**
+
+- [Cosmos](embodied_ai/world_model/cosmos/zh/cosmos_optimization.md)
 
 
 ### CANN 原子特性
