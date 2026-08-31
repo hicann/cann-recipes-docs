@@ -69,6 +69,7 @@
 - [LongCat-Flash](infer/llm/longcat_flash/zh/longcat_flash_optimization.md)
 - [Qwen Dense](infer/llm/qwen/zh/qwen_dense_optimization.md)
 - [Qwen3-MoE](infer/llm/qwen3_moe/zh/qwen3_moe_optimization.md)
+- [Qwen3.5-MoE](infer/llm/qwen3_5/zh/qwen3_5_moe_optimization.md)
 
 **多模态生成**
 
