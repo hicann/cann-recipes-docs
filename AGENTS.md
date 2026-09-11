@@ -40,6 +40,15 @@ python -m py_compile utils\scripts\metadata_enums.py utils\scripts\metadata_labe
 
 修改后检查 Markdown 相对链接、标题锚点、图片路径和外部 URL。不要通过删除字段、放宽校验或跳过文档来绕过错误。
 
+## 站点目录
+
+- `utils/site/index.html` 是静态单页站点入口，展示仓库中的文档内容。
+- `utils/site/build_content.py` 只扫描本地 `infer/`、`train/`、`embodied_ai/` 和 `cann_features/`，生成 `content/index.json` 与 `content/search-index.json`。
+- `utils/site/content/homepage_samples.json` 定义首页展示的领域和模型样例，修改模型样例后应同步检查站点首页。
+- `utils/site/serve.py` 用于本地启动站点，访问地址为 `http://127.0.0.1:<port>`。
+- 站点正文和图片直接读取仓库文件，不通过 GitCode API 下载，也不生成额外正文或图片缓存。
+- 修改站点前阅读 `skill/blog_site_skill.md`；修改站点后同步检查 `utils/site/README.md`。
+
 ## 变更边界
 
 - 保持修改聚焦于用户请求，保留无关的用户改动。

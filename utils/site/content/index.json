@@ -1,0 +1,1997 @@
+{
+  "_metadataEnums": {
+    "quantization": [
+      "bf16",
+      "int8",
+      "int4",
+      "float8",
+      "fp8",
+      "mxfp8",
+      "hif8",
+      "mxfp4"
+    ],
+    "parallelism": [
+      "data-parallel",
+      "tensor-parallel",
+      "pipeline-parallel",
+      "context-parallel",
+      "sequence-parallel",
+      "expert-parallel",
+      "zero"
+    ],
+    "operator": [
+      "ascendc",
+      "tilelang",
+      "pypto",
+      "autofuse"
+    ],
+    "cannFeatures": [
+      "multi-stream",
+      "superkernel",
+      "prefetch",
+      "npugraph"
+    ],
+    "hardware": [
+      "atlas-a2",
+      "atlas-a3",
+      "atlas-310p",
+      "ascend-950"
+    ],
+    "frameworks": [
+      "cann-recipes",
+      "mindspore",
+      "torchtitan",
+      "megatron",
+      "mindspeed",
+      "verl",
+      "vllm"
+    ],
+    "llmSpeculativeInference": [
+      "mtp",
+      "dspark",
+      "dflash",
+      "none"
+    ],
+    "multimodalDitCache": [
+      "None",
+      "FBCache",
+      "TeaCache",
+      "TaylorSeer"
+    ]
+  },
+  "_metadataLabels": {
+    "fields": {
+      "sidebarTitle": {
+        "en": "Sidebar title",
+        "zh": "侧栏标题"
+      },
+      "quantization": {
+        "en": "Quantization",
+        "zh": "量化"
+      },
+      "parallelism": {
+        "en": "Parallelism",
+        "zh": "并行切分"
+      },
+      "operator": {
+        "en": "Operator",
+        "zh": "算子种类"
+      },
+      "cannFeatures": {
+        "en": "CANN Features",
+        "zh": "CANN 特性"
+      },
+      "hardware": {
+        "en": "Hardware",
+        "zh": "硬件"
+      },
+      "frameworks": {
+        "en": "Frameworks",
+        "zh": "框架"
+      },
+      "cover": {
+        "en": "Cover",
+        "zh": "封面"
+      },
+      "llmSpeculativeInference": {
+        "en": "Speculative inference",
+        "zh": "投机推理"
+      },
+      "multimodalDitCache": {
+        "en": "DiT Cache",
+        "zh": "DiT Cache"
+      }
+    },
+    "values": {
+      "quantization": {
+        "bf16": {
+          "en": "BF16",
+          "zh": "BF16"
+        },
+        "int8": {
+          "en": "INT8",
+          "zh": "INT8"
+        },
+        "int4": {
+          "en": "INT4",
+          "zh": "INT4"
+        },
+        "float8": {
+          "en": "Float8",
+          "zh": "Float8"
+        },
+        "fp8": {
+          "en": "FP8",
+          "zh": "FP8"
+        },
+        "mxfp8": {
+          "en": "MXFP8",
+          "zh": "MXFP8"
+        },
+        "hif8": {
+          "en": "HiF8",
+          "zh": "HiF8"
+        },
+        "mxfp4": {
+          "en": "MXFP4",
+          "zh": "MXFP4"
+        }
+      },
+      "parallelism": {
+        "data-parallel": {
+          "en": "Data Parallel",
+          "zh": "数据并行"
+        },
+        "tensor-parallel": {
+          "en": "Tensor Parallel",
+          "zh": "张量并行"
+        },
+        "pipeline-parallel": {
+          "en": "Pipeline Parallel",
+          "zh": "流水并行"
+        },
+        "context-parallel": {
+          "en": "Context Parallel",
+          "zh": "上下文并行"
+        },
+        "sequence-parallel": {
+          "en": "Sequence Parallel",
+          "zh": "序列并行"
+        },
+        "expert-parallel": {
+          "en": "Expert Parallel",
+          "zh": "专家并行"
+        },
+        "zero": {
+          "en": "ZeRO",
+          "zh": "ZeRO"
+        }
+      },
+      "operator": {
+        "ascendc": {
+          "en": "AscendC",
+          "zh": "AscendC"
+        },
+        "tilelang": {
+          "en": "TileLang",
+          "zh": "TileLang"
+        },
+        "pypto": {
+          "en": "PyPTO",
+          "zh": "PyPTO"
+        },
+        "autofuse": {
+          "en": "AutoFuse",
+          "zh": "AutoFuse"
+        }
+      },
+      "cannFeatures": {
+        "multi-stream": {
+          "en": "MultiStream",
+          "zh": "多流"
+        },
+        "superkernel": {
+          "en": "SuperKernel",
+          "zh": "SuperKernel"
+        },
+        "prefetch": {
+          "en": "Prefetch",
+          "zh": "预取"
+        },
+        "npugraph": {
+          "en": "NPUGraph",
+          "zh": "NPUGraph"
+        }
+      },
+      "hardware": {
+        "atlas-a2": {
+          "en": "Atlas A2 / Ascend 910B",
+          "zh": "Atlas A2 / Ascend 910B"
+        },
+        "atlas-a3": {
+          "en": "Atlas A3",
+          "zh": "Atlas A3"
+        },
+        "atlas-310p": {
+          "en": "Atlas 310P",
+          "zh": "Atlas 310P"
+        },
+        "ascend-950": {
+          "en": "Ascend 950",
+          "zh": "Ascend 950"
+        }
+      },
+      "frameworks": {
+        "cann-recipes": {
+          "en": "CANN Recipes",
+          "zh": "CANN Recipes"
+        },
+        "mindspore": {
+          "en": "MindSpore",
+          "zh": "MindSpore"
+        },
+        "torchtitan": {
+          "en": "TorchTitan",
+          "zh": "TorchTitan"
+        },
+        "megatron": {
+          "en": "Megatron",
+          "zh": "Megatron"
+        },
+        "mindspeed": {
+          "en": "MindSpeed",
+          "zh": "MindSpeed"
+        },
+        "verl": {
+          "en": "verl",
+          "zh": "verl"
+        },
+        "vllm": {
+          "en": "vLLM",
+          "zh": "vLLM"
+        }
+      },
+      "cover.type": {
+        "auto": {
+          "en": "Auto cover",
+          "zh": "自动封面"
+        },
+        "image": {
+          "en": "Image cover",
+          "zh": "图片封面"
+        },
+        "mermaid": {
+          "en": "Mermaid cover",
+          "zh": "Mermaid 封面"
+        },
+        "placeholder": {
+          "en": "Placeholder cover",
+          "zh": "占位封面"
+        }
+      },
+      "llmSpeculativeInference": {
+        "mtp": {
+          "en": "MTP",
+          "zh": "MTP"
+        },
+        "dspark": {
+          "en": "DSpark",
+          "zh": "DSpark"
+        },
+        "dflash": {
+          "en": "DFlash",
+          "zh": "DFlash"
+        },
+        "none": {
+          "en": "None",
+          "zh": "未涉及投机推理"
+        }
+      },
+      "multimodalDitCache": {
+        "None": {
+          "en": "None",
+          "zh": "None"
+        },
+        "FBCache": {
+          "en": "FBCache",
+          "zh": "FBCache"
+        },
+        "TeaCache": {
+          "en": "TeaCache",
+          "zh": "TeaCache"
+        },
+        "TaylorSeer": {
+          "en": "TaylorSeer",
+          "zh": "TaylorSeer"
+        }
+      }
+    }
+  },
+  "Infer": {
+    "ns": "cann",
+    "repo": "cann-recipes-docs",
+    "branch": "master",
+    "basePath": "infer",
+    "subcategories": [
+      {
+        "name": "llm",
+        "models": [
+          {
+            "name": "deepseek_r1",
+            "docPath": "llm/deepseek_r1",
+            "reports": [
+              {
+                "file": "deepseek_r1_decode_optimization.md",
+                "title": "基于Atlas A3集群的DeepSeek-R1模型decode阶段推理性能优化",
+                "sidebarTitle": "Decode阶段推理优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/llm/deepseek_r1/zh/deepseek_r1_decode_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "Decode-Stage Inference Performance Optimization for DeepSeek-R1 on an Atlas A3 Cluster",
+                    "sidebarTitle": "Decode Optimization",
+                    "sourcePath": "infer/llm/deepseek_r1/en/deepseek_r1_decode_optimization.md"
+                  }
+                },
+                "quantization": [
+                  "int8"
+                ],
+                "parallelism": [
+                  "expert-parallel"
+                ],
+                "cannFeatures": [
+                  "superkernel"
+                ],
+                "hardware": [
+                  "atlas-a3"
+                ],
+                "frameworks": [
+                  "cann-recipes"
+                ],
+                "llmSpeculativeInference": [
+                  "mtp"
+                ]
+              },
+              {
+                "file": "deepseek_r1_prefill_optimization.md",
+                "title": "基于Atlas A3集群的DeepSeek-R1模型prefill阶段推理性能优化实践",
+                "sidebarTitle": "Prefill阶段推理优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/llm/deepseek_r1/zh/deepseek_r1_prefill_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "Prefill-Stage Inference Performance Optimization for DeepSeek-R1 on an Atlas A3 Cluster",
+                    "sidebarTitle": "Prefill Optimization",
+                    "sourcePath": "infer/llm/deepseek_r1/en/deepseek_r1_prefill_optimization.md"
+                  }
+                },
+                "coverImage": "infer/llm/deepseek_r1/figures/image_attention_dp.png",
+                "quantization": [
+                  "int8"
+                ],
+                "parallelism": [
+                  "data-parallel",
+                  "tensor-parallel",
+                  "sequence-parallel",
+                  "expert-parallel"
+                ],
+                "cannFeatures": [
+                  "multi-stream"
+                ],
+                "hardware": [
+                  "atlas-a3"
+                ],
+                "frameworks": [
+                  "cann-recipes"
+                ],
+                "llmSpeculativeInference": [
+                  "none"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "deepseek_v3_2_exp",
+            "docPath": "llm/deepseek_v3_2_exp",
+            "reports": [
+              {
+                "file": "deepseek_v3.2_exp_ascendc_operator_guide.md",
+                "title": "NPU DeepSeek-V3.2-Exp Ascend C 融合算子优化",
+                "sidebarTitle": "Ascend C融合算子优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/llm/deepseek_v3_2_exp/zh/deepseek_v3.2_exp_ascendc_operator_guide.md",
+                "translations": {
+                  "en": {
+                    "title": "NPU DeepSeek-V3.2-Exp Ascend C Fused Operator Optimization",
+                    "sidebarTitle": "Ascend C Fused Operators",
+                    "sourcePath": "infer/llm/deepseek_v3_2_exp/en/deepseek_v3.2_exp_ascendc_operator_guide.md"
+                  }
+                },
+                "coverImage": "infer/llm/deepseek_v3_2_exp/figures/framework.png",
+                "operator": [
+                  "ascendc"
+                ],
+                "hardware": [
+                  "atlas-a3"
+                ],
+                "frameworks": [
+                  "cann-recipes"
+                ],
+                "llmSpeculativeInference": [
+                  "mtp"
+                ]
+              },
+              {
+                "file": "deepseek_v3.2_exp_inference_guide.md",
+                "title": "NPU DeepSeek-V3.2-Exp推理优化实践",
+                "sidebarTitle": "推理优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/llm/deepseek_v3_2_exp/zh/deepseek_v3.2_exp_inference_guide.md",
+                "translations": {
+                  "en": {
+                    "title": "NPU DeepSeek-V3.2-Exp Inference Optimization Practice",
+                    "sidebarTitle": "Inference Optimization",
+                    "sourcePath": "infer/llm/deepseek_v3_2_exp/en/deepseek_v3.2_exp_inference_guide.md"
+                  }
+                },
+                "coverImage": "infer/llm/deepseek_v3_2_exp/figures/pd_overview.jpg",
+                "quantization": [
+                  "bf16",
+                  "int8",
+                  "int4"
+                ],
+                "parallelism": [
+                  "data-parallel",
+                  "tensor-parallel",
+                  "context-parallel",
+                  "expert-parallel"
+                ],
+                "operator": [
+                  "ascendc",
+                  "pypto",
+                  "tilelang"
+                ],
+                "cannFeatures": [
+                  "multi-stream"
+                ],
+                "hardware": [
+                  "atlas-a3"
+                ],
+                "frameworks": [
+                  "cann-recipes"
+                ],
+                "llmSpeculativeInference": [
+                  "mtp"
+                ]
+              },
+              {
+                "file": "deepseek_v3.2_exp_pypto_operator_guide.md",
+                "title": "NPU DeepSeek-V3.2-Exp PyPTO 融合算子开发优化实践",
+                "sidebarTitle": "PyPTO融合算子优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/llm/deepseek_v3_2_exp/zh/deepseek_v3.2_exp_pypto_operator_guide.md",
+                "translations": {
+                  "en": {
+                    "title": "NPU DeepSeek-V3.2-Exp PyPTO Fused Operator Development and Optimization Practice",
+                    "sidebarTitle": "PyPTO Fused Operators",
+                    "sourcePath": "infer/llm/deepseek_v3_2_exp/en/deepseek_v3.2_exp_pypto_operator_guide.md"
+                  }
+                },
+                "coverImage": "infer/llm/deepseek_v3_2_exp/figures/arch.png",
+                "quantization": [
+                  "int8"
+                ],
+                "operator": [
+                  "pypto"
+                ],
+                "hardware": [
+                  "atlas-a3"
+                ],
+                "frameworks": [
+                  "cann-recipes"
+                ],
+                "llmSpeculativeInference": [
+                  "mtp"
+                ]
+              },
+              {
+                "file": "deepseek_v3.2_exp_tilelang_operator_guide.md",
+                "title": "NPU DeepSeek-V3.2-Exp TileLang算子开发实践",
+                "sidebarTitle": "TileLang算子开发",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/llm/deepseek_v3_2_exp/zh/deepseek_v3.2_exp_tilelang_operator_guide.md",
+                "translations": {
+                  "en": {
+                    "title": "NPU DeepSeek-V3.2-Exp TileLang Operator Development Practice",
+                    "sidebarTitle": "TileLang Operators",
+                    "sourcePath": "infer/llm/deepseek_v3_2_exp/en/deepseek_v3.2_exp_tilelang_operator_guide.md"
+                  }
+                },
+                "coverImage": "infer/llm/deepseek_v3_2_exp/figures/tl-workflow.png",
+                "operator": [
+                  "tilelang"
+                ],
+                "hardware": [
+                  "atlas-a3"
+                ],
+                "frameworks": [
+                  "cann-recipes",
+                  "torchtitan"
+                ],
+                "llmSpeculativeInference": [
+                  "none"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "deepseek_v4",
+            "docPath": "llm/deepseek_v4",
+            "reports": [
+              {
+                "file": "deepseek_v4_ascendc_operator_guide.md",
+                "title": "NPU DeepSeek-V4 Ascend C 融合算子优化",
+                "sidebarTitle": "Ascend C融合算子优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/llm/deepseek_v4/zh/deepseek_v4_ascendc_operator_guide.md",
+                "translations": {
+                  "en": {
+                    "title": "NPU DeepSeek-V4 Ascend C Fused Operator Optimization",
+                    "sidebarTitle": "Ascend C Fused Operators",
+                    "sourcePath": "infer/llm/deepseek_v4/en/deepseek_v4_ascendc_operator_guide.md"
+                  }
+                },
+                "coverImage": "infer/llm/deepseek_v4/figures/aicore.png",
+                "operator": [
+                  "ascendc"
+                ],
+                "hardware": [
+                  "atlas-a3",
+                  "ascend-950"
+                ],
+                "frameworks": [
+                  "cann-recipes"
+                ],
+                "llmSpeculativeInference": [
+                  "mtp"
+                ]
+              },
+              {
+                "file": "deepseek_v4_autofuse_guide.md",
+                "title": "NPU DeepSeek-V4 AutoFuse算子自动融合优化",
+                "sidebarTitle": "AutoFuse自动融合优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/llm/deepseek_v4/zh/deepseek_v4_autofuse_guide.md",
+                "translations": {
+                  "en": {
+                    "title": "NPU DeepSeek-V4 AutoFuse Automatic Operator Fusion Optimization",
+                    "sidebarTitle": "AutoFuse Optimization",
+                    "sourcePath": "infer/llm/deepseek_v4/en/deepseek_v4_autofuse_guide.md"
+                  }
+                },
+                "coverImage": "infer/llm/deepseek_v4/figures/image.png",
+                "operator": [
+                  "autofuse"
+                ],
+                "hardware": [
+                  "atlas-a3"
+                ],
+                "llmSpeculativeInference": [
+                  "none"
+                ]
+              },
+              {
+                "file": "deepseek_v4_inference_guide.md",
+                "title": "NPU DeepSeek-V4推理优化实践",
+                "sidebarTitle": "推理优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/llm/deepseek_v4/zh/deepseek_v4_inference_guide.md",
+                "translations": {
+                  "en": {
+                    "title": "NPU DeepSeek-V4 Inference Optimization Practice",
+                    "sidebarTitle": "Inference Optimization",
+                    "sourcePath": "infer/llm/deepseek_v4/en/deepseek_v4_inference_guide.md"
+                  }
+                },
+                "coverImage": "infer/llm/deepseek_v4/figures/model_architecture.jpg",
+                "quantization": [
+                  "int8",
+                  "int4",
+                  "fp8",
+                  "mxfp8",
+                  "hif8",
+                  "mxfp4"
+                ],
+                "parallelism": [
+                  "data-parallel",
+                  "tensor-parallel",
+                  "context-parallel",
+                  "expert-parallel"
+                ],
+                "operator": [
+                  "ascendc",
+                  "pypto",
+                  "tilelang"
+                ],
+                "cannFeatures": [
+                  "multi-stream"
+                ],
+                "hardware": [
+                  "atlas-a3",
+                  "ascend-950"
+                ],
+                "frameworks": [
+                  "cann-recipes"
+                ],
+                "llmSpeculativeInference": [
+                  "mtp"
+                ]
+              },
+              {
+                "file": "deepseek_v4_mHC_guide.md",
+                "title": "融合算子mHC实现",
+                "sidebarTitle": "mHC融合算子",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/llm/deepseek_v4/zh/deepseek_v4_mHC_guide.md",
+                "translations": {
+                  "en": {
+                    "title": "mHC Fused Operator Implementation",
+                    "sidebarTitle": "mHC Fused Operators",
+                    "sourcePath": "infer/llm/deepseek_v4/en/deepseek_v4_mHC_guide.md"
+                  }
+                },
+                "coverImage": "infer/llm/deepseek_v4/figures/mHC-fuseops.png",
+                "operator": [
+                  "ascendc"
+                ],
+                "hardware": [
+                  "atlas-a3"
+                ],
+                "llmSpeculativeInference": [
+                  "none"
+                ]
+              },
+              {
+                "file": "deepseek_v4_pypto_operator_guide.md",
+                "title": "NPU DeepSeek-V4模型 PyPTO 融合算子优化",
+                "sidebarTitle": "PyPTO融合算子优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/llm/deepseek_v4/zh/deepseek_v4_pypto_operator_guide.md",
+                "translations": {
+                  "en": {
+                    "title": "NPU DeepSeek-V4 PyPTO Fused Operator Optimization",
+                    "sidebarTitle": "PyPTO Fused Operators",
+                    "sourcePath": "infer/llm/deepseek_v4/en/deepseek_v4_pypto_operator_guide.md"
+                  }
+                },
+                "coverImage": "infer/llm/deepseek_v4/figures/hc_pre_swimlane.png",
+                "operator": [
+                  "pypto"
+                ],
+                "hardware": [
+                  "atlas-a2",
+                  "atlas-a3",
+                  "ascend-950"
+                ],
+                "llmSpeculativeInference": [
+                  "mtp"
+                ]
+              },
+              {
+                "file": "deepseek_v4_shmem_guide.md",
+                "title": "NPU DeepSeek SHMEM通信优化实践",
+                "sidebarTitle": "SHMEM通信优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/llm/deepseek_v4/zh/deepseek_v4_shmem_guide.md",
+                "translations": {
+                  "en": {
+                    "title": "NPU DeepSeek SHMEM Communication Optimization Practice",
+                    "sidebarTitle": "SHMEM Optimization",
+                    "sourcePath": "infer/llm/deepseek_v4/en/deepseek_v4_shmem_guide.md"
+                  }
+                },
+                "coverImage": "infer/llm/deepseek_v4/figures/shmem-interface.png",
+                "parallelism": [
+                  "expert-parallel"
+                ],
+                "operator": [
+                  "tilelang",
+                  "pypto"
+                ],
+                "hardware": [
+                  "atlas-a3"
+                ],
+                "llmSpeculativeInference": [
+                  "none"
+                ]
+              },
+              {
+                "file": "deepseek_v4_tilelang_operator_guide.md",
+                "title": "NPU DeepSeek-V4 TileLang算子开发实践",
+                "sidebarTitle": "TileLang算子开发",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/llm/deepseek_v4/zh/deepseek_v4_tilelang_operator_guide.md",
+                "translations": {
+                  "en": {
+                    "title": "NPU DeepSeek-V4 TileLang Operator Development Practice",
+                    "sidebarTitle": "TileLang Operators",
+                    "sourcePath": "infer/llm/deepseek_v4/en/deepseek_v4_tilelang_operator_guide.md"
+                  }
+                },
+                "coverImage": "infer/llm/deepseek_v4/figures/tl_autosync.png",
+                "quantization": [
+                  "int8"
+                ],
+                "operator": [
+                  "tilelang"
+                ],
+                "llmSpeculativeInference": [
+                  "none"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "gpt_oss",
+            "docPath": "llm/gpt_oss",
+            "reports": [
+              {
+                "file": "gpt_oss_optimization.md",
+                "title": "基于Atlas A2的GPT-OSS模型推理性能优化实践",
+                "sidebarTitle": "推理优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/llm/gpt_oss/zh/gpt_oss_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "GPT-OSS Inference Performance Optimization on Atlas A2",
+                    "sidebarTitle": "Inference Optimization",
+                    "sourcePath": "infer/llm/gpt_oss/en/gpt_oss_optimization.md"
+                  }
+                },
+                "coverImage": "infer/llm/gpt_oss/figures/attention_tp.png",
+                "parallelism": [
+                  "tensor-parallel"
+                ],
+                "hardware": [
+                  "atlas-a2"
+                ],
+                "frameworks": [
+                  "cann-recipes"
+                ],
+                "llmSpeculativeInference": [
+                  "none"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "hy3",
+            "docPath": "llm/hy3",
+            "reports": [
+              {
+                "file": "hy3_optimization.md",
+                "title": "Hy3 昇腾0day适配： 基于CANN的高性能推理优化实践",
+                "sidebarTitle": "推理优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/llm/hy3/zh/hy3_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "Hy3 Day-0 Adaptation on Ascend: High-Performance Inference Optimization with CANN",
+                    "sidebarTitle": "Inference Optimization",
+                    "sourcePath": "infer/llm/hy3/en/hy3_optimization.md"
+                  }
+                },
+                "coverImage": "infer/llm/hy3/figures/moe_multi_stream_prof.jpg",
+                "quantization": [
+                  "fp8",
+                  "mxfp8",
+                  "mxfp4"
+                ],
+                "parallelism": [
+                  "tensor-parallel",
+                  "sequence-parallel",
+                  "expert-parallel"
+                ],
+                "operator": [
+                  "ascendc"
+                ],
+                "cannFeatures": [
+                  "multi-stream",
+                  "npugraph"
+                ],
+                "hardware": [
+                  "atlas-a3",
+                  "ascend-950"
+                ],
+                "frameworks": [
+                  "cann-recipes"
+                ],
+                "llmSpeculativeInference": [
+                  "none"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "kimi_k2_thinking",
+            "docPath": "llm/kimi_k2_thinking",
+            "reports": [
+              {
+                "file": "kimi_k2_thinking_inference_guide.md",
+                "title": "NPU Kimi-K2-Thinking推理优化实践",
+                "sidebarTitle": "推理优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/llm/kimi_k2_thinking/zh/kimi_k2_thinking_inference_guide.md",
+                "translations": {
+                  "en": {
+                    "title": "NPU Kimi-K2-Thinking Inference Optimization",
+                    "sidebarTitle": "Inference Optimization",
+                    "sourcePath": "infer/llm/kimi_k2_thinking/en/kimi_k2_thinking_inference_guide.md"
+                  }
+                },
+                "coverImage": "infer/llm/kimi_k2_thinking/figures/k2_deployment.jpg",
+                "quantization": [
+                  "bf16",
+                  "int4"
+                ],
+                "parallelism": [
+                  "data-parallel",
+                  "tensor-parallel",
+                  "context-parallel",
+                  "expert-parallel"
+                ],
+                "hardware": [
+                  "atlas-a3"
+                ],
+                "frameworks": [
+                  "cann-recipes"
+                ],
+                "llmSpeculativeInference": [
+                  "none"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "kimi_k3",
+            "docPath": "llm/kimi_k3",
+            "reports": [
+              {
+                "file": "kimi_k3_inference_guide.md",
+                "title": "Kimi K3 昇腾 NPU 推理优化实践",
+                "sidebarTitle": "推理优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/llm/kimi_k3/zh/kimi_k3_inference_guide.md",
+                "translations": {
+                  "en": {
+                    "title": "Kimi K3 Inference Optimization on Ascend NPU",
+                    "sidebarTitle": "Inference Optimization",
+                    "sourcePath": "infer/llm/kimi_k3/en/kimi_k3_inference_guide.md"
+                  }
+                },
+                "coverImage": "infer/llm/kimi_k3/figures/model_architecture.svg",
+                "quantization": [
+                  "bf16",
+                  "mxfp4"
+                ],
+                "parallelism": [
+                  "data-parallel",
+                  "tensor-parallel",
+                  "sequence-parallel",
+                  "expert-parallel"
+                ],
+                "cannFeatures": [
+                  "multi-stream",
+                  "npugraph"
+                ],
+                "hardware": [
+                  "ascend-950"
+                ],
+                "frameworks": [
+                  "cann-recipes"
+                ],
+                "llmSpeculativeInference": [
+                  "dspark"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "longcat_2_0",
+            "docPath": "llm/longcat_2_0",
+            "reports": [
+              {
+                "file": "longcat_2.0_optimization.md",
+                "title": "NPU LongCat-2.0推理优化实践",
+                "sidebarTitle": "推理优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/llm/longcat_2_0/zh/longcat_2.0_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "NPU LongCat-2.0 Inference Optimization",
+                    "sidebarTitle": "Inference Optimization",
+                    "sourcePath": "infer/llm/longcat_2_0/en/longcat_2.0_optimization.md"
+                  }
+                },
+                "coverImage": "infer/llm/longcat_2_0/figures/sc_moe.jpg",
+                "quantization": [
+                  "bf16",
+                  "int8"
+                ],
+                "parallelism": [
+                  "data-parallel",
+                  "tensor-parallel",
+                  "pipeline-parallel",
+                  "context-parallel",
+                  "expert-parallel"
+                ],
+                "cannFeatures": [
+                  "multi-stream",
+                  "prefetch"
+                ],
+                "hardware": [
+                  "atlas-a2"
+                ],
+                "frameworks": [
+                  "cann-recipes"
+                ],
+                "llmSpeculativeInference": [
+                  "mtp"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "longcat_flash",
+            "docPath": "llm/longcat_flash",
+            "reports": [
+              {
+                "file": "longcat_flash_optimization.md",
+                "title": "基于Atlas A3集群的LongCat-Flash模型推理性能优化实践",
+                "sidebarTitle": "推理优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/llm/longcat_flash/zh/longcat_flash_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "LongCat-Flash Inference Performance Optimization on an Atlas A3 Cluster",
+                    "sidebarTitle": "Inference Optimization",
+                    "sourcePath": "infer/llm/longcat_flash/en/longcat_flash_optimization.md"
+                  }
+                },
+                "coverImage": "infer/llm/longcat_flash/figures/overlap_strategy.png",
+                "parallelism": [
+                  "data-parallel",
+                  "tensor-parallel",
+                  "expert-parallel"
+                ],
+                "cannFeatures": [
+                  "multi-stream",
+                  "superkernel",
+                  "prefetch",
+                  "npugraph"
+                ],
+                "hardware": [
+                  "atlas-a3"
+                ],
+                "frameworks": [
+                  "cann-recipes"
+                ],
+                "llmSpeculativeInference": [
+                  "mtp"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "qwen",
+            "docPath": "llm/qwen",
+            "reports": [
+              {
+                "file": "qwen_dense_optimization.md",
+                "title": "基于Atlas A2/A3的Qwen Dense模型推理性能优化实践",
+                "sidebarTitle": "推理优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/llm/qwen/zh/qwen_dense_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "Qwen Dense Inference Performance Optimization on Atlas A2/A3",
+                    "sidebarTitle": "Inference Optimization",
+                    "sourcePath": "infer/llm/qwen/en/qwen_dense_optimization.md"
+                  }
+                },
+                "quantization": [
+                  "bf16",
+                  "int8"
+                ],
+                "parallelism": [
+                  "tensor-parallel"
+                ],
+                "hardware": [
+                  "atlas-a2",
+                  "atlas-a3"
+                ],
+                "frameworks": [
+                  "cann-recipes"
+                ],
+                "llmSpeculativeInference": [
+                  "none"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "qwen3_5",
+            "docPath": "llm/qwen3_5",
+            "reports": [
+              {
+                "file": "qwen3_5_moe_optimization.md",
+                "title": "Qwen3.5-MoE模型推理性能优化实践",
+                "sidebarTitle": "推理性能优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/llm/qwen3_5/zh/qwen3_5_moe_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "Qwen3.5-MoE Inference Performance Optimization Practices",
+                    "sidebarTitle": "Inference Optimization",
+                    "sourcePath": "infer/llm/qwen3_5/en/qwen3_5_moe_optimization.md"
+                  }
+                },
+                "coverImage": "infer/llm/qwen3_5/figures/attention_tp.png",
+                "parallelism": [
+                  "tensor-parallel",
+                  "expert-parallel"
+                ],
+                "cannFeatures": [
+                  "npugraph"
+                ],
+                "hardware": [
+                  "atlas-a3"
+                ],
+                "llmSpeculativeInference": [
+                  "none"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "qwen3_moe",
+            "docPath": "llm/qwen3_moe",
+            "reports": [
+              {
+                "file": "qwen3_moe_optimization.md",
+                "title": "基于Atlas A3、950训练/推理集群的Qwen3-MoE模型低时延推理性能优化实践",
+                "sidebarTitle": "推理优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/llm/qwen3_moe/zh/qwen3_moe_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "Low-Latency Inference Performance Optimization Practices for Qwen3-MoE on Atlas A3 and 950 Training/Inference Clusters",
+                    "sidebarTitle": "Inference Optimization",
+                    "sourcePath": "infer/llm/qwen3_moe/en/qwen3_moe_optimization.md"
+                  }
+                },
+                "coverImage": "infer/llm/qwen3_moe/figures/attention_tp.png",
+                "quantization": [
+                  "bf16",
+                  "mxfp4"
+                ],
+                "parallelism": [
+                  "tensor-parallel",
+                  "sequence-parallel",
+                  "expert-parallel"
+                ],
+                "cannFeatures": [
+                  "npugraph"
+                ],
+                "hardware": [
+                  "atlas-a3",
+                  "ascend-950"
+                ],
+                "frameworks": [
+                  "cann-recipes"
+                ],
+                "llmSpeculativeInference": [
+                  "none"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "multimodal",
+        "models": [
+          {
+            "name": "davinci_magihuman",
+            "docPath": "multimodal/davinci_magihuman",
+            "reports": [
+              {
+                "file": "davinci-magihuman_optimization.md",
+                "title": "NPU daVinci-MagiHuman模型推理优化实践",
+                "sidebarTitle": "推理优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/multimodal/davinci_magihuman/zh/davinci-magihuman_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "daVinci-MagiHuman Model Inference Optimization on NPU",
+                    "sidebarTitle": "Inference Optimization",
+                    "sourcePath": "infer/multimodal/davinci_magihuman/en/davinci-magihuman_optimization.md"
+                  }
+                },
+                "hardware": [
+                  "atlas-a2",
+                  "atlas-a3"
+                ],
+                "cover": {
+                  "type": "auto"
+                },
+                "multimodalDitCache": [
+                  "None"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "hunyuan_image_3",
+            "docPath": "multimodal/hunyuan_image_3",
+            "reports": [
+              {
+                "file": "hunyuan_image_3_optimization.md",
+                "title": "NPU HunyuanImage-3.0模型推理优化实践",
+                "sidebarTitle": "推理优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/multimodal/hunyuan_image_3/zh/hunyuan_image_3_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "NPU HunyuanImage-3.0 Model Inference Optimization Practice",
+                    "sidebarTitle": "Inference Optimization",
+                    "sourcePath": "infer/multimodal/hunyuan_image_3/en/hunyuan_image_3_optimization.md"
+                  }
+                },
+                "coverImage": "infer/multimodal/hunyuan_image_3/figures/attention_tp.png",
+                "parallelism": [
+                  "tensor-parallel",
+                  "expert-parallel"
+                ],
+                "cannFeatures": [
+                  "multi-stream"
+                ],
+                "hardware": [
+                  "atlas-a2",
+                  "atlas-a3"
+                ],
+                "cover": {
+                  "type": "auto"
+                },
+                "multimodalDitCache": [
+                  "None"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "hunyuan_video",
+            "docPath": "multimodal/hunyuan_video",
+            "reports": [
+              {
+                "file": "hunyuan_video_optimization.md",
+                "title": "NPU HunyuanVideo模型推理优化实践",
+                "sidebarTitle": "推理优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/multimodal/hunyuan_video/zh/hunyuan_video_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "NPU HunyuanVideo Model Inference Optimization Practice",
+                    "sidebarTitle": "Inference Optimization",
+                    "sourcePath": "infer/multimodal/hunyuan_video/en/hunyuan_video_optimization.md"
+                  }
+                },
+                "coverImage": "infer/multimodal/hunyuan_video/figures/ulysses.png",
+                "quantization": [
+                  "fp8",
+                  "mxfp8"
+                ],
+                "parallelism": [
+                  "sequence-parallel"
+                ],
+                "hardware": [
+                  "atlas-a2",
+                  "atlas-a3",
+                  "ascend-950"
+                ],
+                "cover": {
+                  "type": "auto"
+                },
+                "multimodalDitCache": [
+                  "FBCache",
+                  "TeaCache",
+                  "TaylorSeer"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "sana_video",
+            "docPath": "multimodal/sana_video",
+            "reports": [
+              {
+                "file": "SANA-Video_optimization.md",
+                "title": "NPU SANA-Video模型推理优化实践",
+                "sidebarTitle": "推理优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/multimodal/sana_video/zh/SANA-Video_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "SANA-Video Model Inference Optimization on NPU",
+                    "sidebarTitle": "Inference Optimization",
+                    "sourcePath": "infer/multimodal/sana_video/en/SANA-Video_optimization.md"
+                  }
+                },
+                "hardware": [
+                  "atlas-a2",
+                  "atlas-a3"
+                ],
+                "cover": {
+                  "type": "auto"
+                },
+                "multimodalDitCache": [
+                  "None"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "wan2_2_i2v",
+            "docPath": "multimodal/wan2_2_i2v",
+            "reports": [
+              {
+                "file": "wan2.2-i2v_optimization.md",
+                "title": "NPU Wan2.2-I2V模型推理优化实践",
+                "sidebarTitle": "推理优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/multimodal/wan2_2_i2v/zh/wan2.2-i2v_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "NPU Wan2.2-I2V Model Inference Optimization Practice",
+                    "sidebarTitle": "Inference Optimization",
+                    "sourcePath": "infer/multimodal/wan2_2_i2v/en/wan2.2-i2v_optimization.md"
+                  }
+                },
+                "coverImage": "infer/multimodal/wan2_2_i2v/figures/vae_parallel.png",
+                "parallelism": [
+                  "sequence-parallel"
+                ],
+                "cover": {
+                  "type": "auto"
+                },
+                "multimodalDitCache": [
+                  "FBCache",
+                  "TeaCache"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "recommendation",
+        "models": [
+          {
+            "name": "hstu",
+            "docPath": "recommendation/hstu",
+            "reports": [
+              {
+                "file": "hstu_optimization.md",
+                "title": "NPU HSTU 模型推理优化实践",
+                "sidebarTitle": "推理优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "infer/recommendation/hstu/zh/hstu_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "HSTU Model Inference Optimization on NPU",
+                    "sidebarTitle": "Inference Optimization",
+                    "sourcePath": "infer/recommendation/hstu/en/hstu_optimization.md"
+                  }
+                },
+                "coverImage": "infer/recommendation/hstu/figures/embedding_tp.png",
+                "parallelism": [
+                  "data-parallel",
+                  "tensor-parallel"
+                ],
+                "cannFeatures": [
+                  "multi-stream"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Train": {
+    "ns": "cann",
+    "repo": "cann-recipes-docs",
+    "branch": "master",
+    "basePath": "train",
+    "subcategories": [
+      {
+        "name": "pretrain",
+        "models": [
+          {
+            "name": "deepseek_v3",
+            "docPath": "pretrain/deepseek_v3",
+            "reports": [
+              {
+                "file": "deepseek-v3_pre_train_hif8_mxfp8.md",
+                "title": "HiF8精度&性能双突破——基于昇腾950DT的大模型训练低精度优化实践",
+                "sidebarTitle": "HiF8/MXFP8 预训练",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/pretrain/deepseek_v3/zh/deepseek-v3_pre_train_hif8_mxfp8.md",
+                "translations": {
+                  "en": {
+                    "title": "HiF8 Precision and Performance Dual Breakthrough — Low-Precision Optimization Practice for Large-Model Training on the Ascend 950DT",
+                    "sidebarTitle": "HiF8/MXFP8 Pretrain",
+                    "sourcePath": "train/pretrain/deepseek_v3/en/deepseek-v3_pre_train_hif8_mxfp8.md"
+                  }
+                },
+                "coverImage": "train/pretrain/deepseek_v3/figures/image1.png",
+                "quantization": [
+                  "hif8",
+                  "mxfp8"
+                ],
+                "hardware": [
+                  "ascend-950"
+                ],
+                "frameworks": [
+                  "mindspeed"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              }
+            ]
+          },
+          {
+            "name": "deepseek_v32",
+            "docPath": "pretrain/deepseek_v32",
+            "reports": [
+              {
+                "file": "deepseek-v32_pre_train_optimization.md",
+                "title": "CANN+TorchTitan: DeepSeek-V3.2 32k长序列预训练昇腾优化实践",
+                "sidebarTitle": "DeepSeek-V3.2 预训练优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/pretrain/deepseek_v32/zh/deepseek-v32_pre_train_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "CANN + TorchTitan: Ascend Optimization Practice for DeepSeek-V3.2 32k Long-Sequence Pretraining",
+                    "sidebarTitle": "DeepSeek-V3.2 Pretrain",
+                    "sourcePath": "train/pretrain/deepseek_v32/en/deepseek-v32_pre_train_optimization.md"
+                  }
+                },
+                "coverImage": "train/pretrain/deepseek_v32/figures/EP_optimize_before.png",
+                "parallelism": [
+                  "data-parallel",
+                  "tensor-parallel",
+                  "expert-parallel",
+                  "context-parallel"
+                ],
+                "operator": [
+                  "ascendc"
+                ],
+                "cannFeatures": [
+                  "multi-stream",
+                  "prefetch"
+                ],
+                "hardware": [
+                  "atlas-a3"
+                ],
+                "frameworks": [
+                  "torchtitan"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              }
+            ]
+          },
+          {
+            "name": "deepseek_v4",
+            "docPath": "pretrain/deepseek_v4",
+            "reports": [
+              {
+                "file": "deepseek-v4_torchtitan_npu_autofuse.md",
+                "title": "DeepSeek-V4昇腾训练支持：基于 CANN 平台的TorchTitan-NPU + AutoFuse 极简训练优化实践",
+                "sidebarTitle": "训练优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/pretrain/deepseek_v4/zh/deepseek-v4_torchtitan_npu_autofuse.md",
+                "translations": {
+                  "en": {
+                    "title": "DeepSeek-V4 Ascend Training Support: Minimalist Training Optimization Practice of TorchTitan-NPU + AutoFuse on the CANN Platform",
+                    "sidebarTitle": "Training Optimization",
+                    "sourcePath": "train/pretrain/deepseek_v4/en/deepseek-v4_torchtitan_npu_autofuse.md"
+                  }
+                },
+                "coverImage": "train/pretrain/deepseek_v4/figures/Architecture.png",
+                "frameworks": [
+                  "torchtitan"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "rl",
+        "models": [
+          {
+            "name": "deepseek",
+            "docPath": "rl/deepseek",
+            "reports": [
+              {
+                "file": "deepseek_rl_train_optimization.md",
+                "title": "基于verl前端&A3集群的DeepSeek-R1模型RL训练优化实践",
+                "sidebarTitle": "DeepSeek RL 训练优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/rl/deepseek/zh/deepseek_rl_train_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "DeepSeek-R1 Model RL Training Optimization Practice Based on the verl Frontend & A3 Cluster",
+                    "sidebarTitle": "DeepSeek RL Optimization",
+                    "sourcePath": "train/rl/deepseek/en/deepseek_rl_train_optimization.md"
+                  }
+                },
+                "coverImage": "train/rl/deepseek/figures/image2.png",
+                "parallelism": [
+                  "data-parallel",
+                  "tensor-parallel",
+                  "pipeline-parallel",
+                  "expert-parallel"
+                ],
+                "cannFeatures": [
+                  "multi-stream"
+                ],
+                "hardware": [
+                  "atlas-a3"
+                ],
+                "frameworks": [
+                  "megatron",
+                  "mindspeed",
+                  "verl",
+                  "vllm"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              }
+            ]
+          },
+          {
+            "name": "qwen3_235B",
+            "docPath": "rl/qwen3/qwen3_235B",
+            "reports": [
+              {
+                "file": "qwen3_235B_32k_longseq_rl_train_optimization.md",
+                "title": "Qwen3-235B 32K长序列RL训练优化实践",
+                "sidebarTitle": "训练优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/rl/qwen3/qwen3_235B/zh/qwen3_235B_32k_longseq_rl_train_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "Qwen3-235B 32K Long-Sequence RL Training Optimization Practice",
+                    "sidebarTitle": "Training Optimization",
+                    "sourcePath": "train/rl/qwen3/qwen3_235B/en/qwen3_235B_32k_longseq_rl_train_optimization.md"
+                  }
+                },
+                "coverImage": "train/rl/qwen3/qwen3_235B/figures/image1.png",
+                "parallelism": [
+                  "data-parallel",
+                  "tensor-parallel",
+                  "pipeline-parallel",
+                  "expert-parallel",
+                  "context-parallel"
+                ],
+                "hardware": [
+                  "atlas-a3"
+                ],
+                "frameworks": [
+                  "megatron",
+                  "mindspeed",
+                  "verl",
+                  "vllm"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              }
+            ]
+          },
+          {
+            "name": "sam_decoding",
+            "docPath": "rl/qwen3/sam_decoding",
+            "reports": [
+              {
+                "file": "sam_decoding.md",
+                "title": "SAM投机推理：长序列强化学习训练加速利器",
+                "sidebarTitle": "投机解码",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/rl/qwen3/sam_decoding/zh/sam_decoding.md",
+                "translations": {
+                  "en": {
+                    "title": "SAM Speculative Inference: A Powerful Accelerator for Long-Sequence Reinforcement Learning Training",
+                    "sidebarTitle": "Speculative Decoding",
+                    "sourcePath": "train/rl/qwen3/sam_decoding/en/sam_decoding.md"
+                  }
+                },
+                "coverImage": "train/rl/qwen3/sam_decoding/figures/image35.png",
+                "parallelism": [
+                  "tensor-parallel"
+                ],
+                "hardware": [
+                  "atlas-a3"
+                ],
+                "frameworks": [
+                  "verl",
+                  "vllm"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Embodied_AI": {
+    "ns": "cann",
+    "repo": "cann-recipes-docs",
+    "branch": "master",
+    "basePath": "embodied_ai",
+    "subcategories": [
+      {
+        "name": "3d_vision",
+        "models": [
+          {
+            "name": "gaussian_splatting",
+            "docPath": "3d_vision/gaussian_splatting",
+            "reports": [
+              {
+                "file": "gaussian_splatting_alpha_blending_optimization.md",
+                "title": "NPU 3DGS Ascend C Alpha Blending 算子优化",
+                "sidebarTitle": "AlphaBlending算子",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "embodied_ai/3d_vision/gaussian_splatting/zh/gaussian_splatting_alpha_blending_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "NPU 3DGS Ascend C Alpha Blending Operator Optimization",
+                    "sidebarTitle": "AlphaBlending Operator",
+                    "sourcePath": "embodied_ai/3d_vision/gaussian_splatting/en/gaussian_splatting_alpha_blending_optimization.md"
+                  }
+                },
+                "coverImage": "embodied_ai/3d_vision/gaussian_splatting/figures/pipeline.jpeg",
+                "operator": [
+                  "ascendc"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              },
+              {
+                "file": "gaussian_splatting_culling_optimization.md",
+                "title": "视锥剔除优化",
+                "sidebarTitle": "3DGS 视锥剔除",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "embodied_ai/3d_vision/gaussian_splatting/zh/gaussian_splatting_culling_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "Frustum Culling Optimization",
+                    "sidebarTitle": "3DGS Frustum Culling",
+                    "sourcePath": "embodied_ai/3d_vision/gaussian_splatting/en/gaussian_splatting_culling_optimization.md"
+                  }
+                },
+                "coverImage": "embodied_ai/3d_vision/gaussian_splatting/figures/gaussian_filter_tiling.png",
+                "operator": [
+                  "ascendc"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              },
+              {
+                "file": "gaussian_splatting_load_balance_optimization.md",
+                "title": "NPU 3DGS Ascend C Alpha Blending算子负载均衡策略",
+                "sidebarTitle": "算子负载均衡",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "embodied_ai/3d_vision/gaussian_splatting/zh/gaussian_splatting_load_balance_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "NPU 3DGS Ascend C Alpha Blending Operator Load Balancing Strategy",
+                    "sidebarTitle": "Operator Load Balancing",
+                    "sourcePath": "embodied_ai/3d_vision/gaussian_splatting/en/gaussian_splatting_load_balance_optimization.md"
+                  }
+                },
+                "coverImage": "embodied_ai/3d_vision/gaussian_splatting/figures/gaussian_tile_origin.png",
+                "operator": [
+                  "ascendc"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              },
+              {
+                "file": "gaussian_splatting_precise_intersection_optimization.md",
+                "title": "NPU 3DGS Ascend C Precise Intersection算子优化",
+                "sidebarTitle": "精确相交算子",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "embodied_ai/3d_vision/gaussian_splatting/zh/gaussian_splatting_precise_intersection_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "NPU 3DGS Ascend C Precise Intersection Operator Optimization",
+                    "sidebarTitle": "Precise Intersect Op",
+                    "sourcePath": "embodied_ai/3d_vision/gaussian_splatting/en/gaussian_splatting_precise_intersection_optimization.md"
+                  }
+                },
+                "coverImage": "embodied_ai/3d_vision/gaussian_splatting/figures/gs_algorithm.png",
+                "operator": [
+                  "ascendc"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              }
+            ]
+          },
+          {
+            "name": "hunyuan3d",
+            "docPath": "3d_vision/hunyuan3d",
+            "reports": [
+              {
+                "file": "Hunyuan3D_optimization.md",
+                "title": "NPU Hunyuan3D 模型推理优化实践",
+                "sidebarTitle": "推理优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "embodied_ai/3d_vision/hunyuan3d/zh/Hunyuan3D_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "NPU Hunyuan3D Model Inference Optimization Practices",
+                    "sidebarTitle": "Inference Optimization",
+                    "sourcePath": "embodied_ai/3d_vision/hunyuan3d/en/Hunyuan3D_optimization.md"
+                  }
+                },
+                "cannFeatures": [
+                  "npugraph"
+                ],
+                "hardware": [
+                  "atlas-a2"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              }
+            ]
+          },
+          {
+            "name": "vggt",
+            "docPath": "3d_vision/vggt",
+            "reports": [
+              {
+                "file": "vggt_optimization.md",
+                "title": "NPU VGGT 模型推理优化实践",
+                "sidebarTitle": "推理优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "embodied_ai/3d_vision/vggt/zh/vggt_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "NPU VGGT Model Inference Optimization Practices",
+                    "sidebarTitle": "Inference Optimization",
+                    "sourcePath": "embodied_ai/3d_vision/vggt/en/vggt_optimization.md"
+                  }
+                },
+                "quantization": [
+                  "int8"
+                ],
+                "parallelism": [
+                  "sequence-parallel"
+                ],
+                "hardware": [
+                  "atlas-a2"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "manipulation",
+        "models": [
+          {
+            "name": "groot_n1_6",
+            "docPath": "manipulation/groot_n1_6",
+            "reports": [
+              {
+                "file": "groot_n1_6_optimization.md",
+                "title": "GR00T N1.6机器人VLA大模型推理昇腾迁移-性能优化说明",
+                "sidebarTitle": "推理优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "embodied_ai/manipulation/groot_n1_6/zh/groot_n1_6_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "GR00T N1.6 VLA Model Inference: Ascend Adaptation and Performance Optimization Guide",
+                    "sidebarTitle": "Inference Optimization",
+                    "sourcePath": "embodied_ai/manipulation/groot_n1_6/en/groot_n1_6_optimization.md"
+                  }
+                },
+                "cannFeatures": [
+                  "npugraph"
+                ],
+                "hardware": [
+                  "atlas-a3"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              }
+            ]
+          },
+          {
+            "name": "pi0",
+            "docPath": "manipulation/pi0",
+            "reports": [
+              {
+                "file": "pi0_infer_with_om.md",
+                "title": "Pi0 OM 推理 Debug 经验",
+                "sidebarTitle": "OM推理",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "embodied_ai/manipulation/pi0/zh/pi0_infer_with_om.md",
+                "translations": {
+                  "en": {
+                    "title": "Pi0 OM Inference Debug Experience",
+                    "sidebarTitle": "OM Inference",
+                    "sourcePath": "embodied_ai/manipulation/pi0/en/pi0_infer_with_om.md"
+                  }
+                },
+                "hardware": [
+                  "atlas-310p"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              },
+              {
+                "file": "pi0_infer_with_torch.md",
+                "title": "pi0机器人VLA大模型推理昇腾迁移-性能优化说明",
+                "sidebarTitle": "推理优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "embodied_ai/manipulation/pi0/zh/pi0_infer_with_torch.md",
+                "translations": {
+                  "en": {
+                    "title": "Pi0 VLA Large Model Inference: Ascend Adaptation and Performance Optimization Guide",
+                    "sidebarTitle": "Inference Optimization",
+                    "sourcePath": "embodied_ai/manipulation/pi0/en/pi0_infer_with_torch.md"
+                  }
+                },
+                "cannFeatures": [
+                  "npugraph"
+                ],
+                "hardware": [
+                  "atlas-a2"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "navigation",
+        "models": [
+          {
+            "name": "alpamayo_r1",
+            "docPath": "navigation/alpamayo_r1",
+            "reports": [
+              {
+                "file": "alpamayo_r1_optimization.md",
+                "title": "Alpamayo-R1 智驾VLA模型推理昇腾迁移-性能优化说明",
+                "sidebarTitle": "推理优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "embodied_ai/navigation/alpamayo_r1/zh/alpamayo_r1_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "Alpamayo-R1 VLA Model Inference: Ascend Adaptation and Performance Optimization Guide",
+                    "sidebarTitle": "Inference Optimization",
+                    "sourcePath": "embodied_ai/navigation/alpamayo_r1/en/alpamayo_r1_optimization.md"
+                  }
+                },
+                "hardware": [
+                  "atlas-a2"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "world_model",
+        "models": [
+          {
+            "name": "cosmos",
+            "docPath": "world_model/cosmos",
+            "reports": [
+              {
+                "file": "cosmos_optimization.md",
+                "title": "Cosmos 昇腾 NPU 多卡并行优化说明",
+                "sidebarTitle": "多卡并行",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "embodied_ai/world_model/cosmos/zh/cosmos_optimization.md",
+                "translations": {
+                  "en": {
+                    "title": "Cosmos Ascend NPU Multi-Card Parallel Optimization Guide",
+                    "sidebarTitle": "Multi-Card Parallel",
+                    "sourcePath": "embodied_ai/world_model/cosmos/en/cosmos_optimization.md"
+                  }
+                },
+                "parallelism": [
+                  "context-parallel"
+                ],
+                "hardware": [
+                  "atlas-a3"
+                ],
+                "frameworks": [
+                  "megatron"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "CANN Features": {
+    "ns": "cann",
+    "repo": "cann-recipes-docs",
+    "branch": "master",
+    "basePath": "cann_features",
+    "flat": true,
+    "reports": [
+      {
+        "file": "multi_stream_principles.md",
+        "title": "NPU 多流原理",
+        "sidebarTitle": "多流优化原理",
+        "sourceRepo": "cann-recipes-docs",
+        "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+        "sourcePath": "cann_features/zh/multi_stream_principles.md",
+        "translations": {
+          "en": {
+            "title": "NPU Multi-Stream Principles",
+            "sidebarTitle": "Multi-Stream Principles",
+            "sourcePath": "cann_features/en/multi_stream_principles.md"
+          }
+        },
+        "coverImage": "mermaid:Zmxvd2NoYXJ0IExSCiAgICBBWyLliY3nva7nrpflrZAgQSJdIC0tPiBCMVsi5YiG5pSvIEIg566X5a2QIDEiXQogICAgQSAtLT4gQzFbIuWIhuaUryBDIOeul+WtkCAxIl0KICAgIEIxIC0tPiBCMlsi5YiG5pSvIEIg566X5a2QIDIiXQogICAgQzEgLS0+IEMyWyLliIbmlK8gQyDnrpflrZAgMiJdCiAgICBCMiAtLT4gRFsi5rGH5ZCI566X5a2QIEQiXQogICAgQzIgLS0+IEQ=",
+        "cannFeatures": [
+          "multi-stream"
+        ]
+      },
+      {
+        "file": "npu_graph_optimization.md",
+        "title": "NPU 图模式优化原理",
+        "sidebarTitle": "NPU图模式优化原理",
+        "sourceRepo": "cann-recipes-docs",
+        "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+        "sourcePath": "cann_features/zh/npu_graph_optimization.md",
+        "translations": {
+          "en": {
+            "title": "NPU Graph Mode Optimization Principles",
+            "sidebarTitle": "Graph Mode Optimization",
+            "sourcePath": "cann_features/en/npu_graph_optimization.md"
+          }
+        },
+        "coverImage": "mermaid:YmxvY2stYmV0YQogIGNvbHVtbnMgMTMKICBzMFsiQ1BVIFRpbWUiXToyIGQxWyLkuIvlj5E8YnIvPmtlcm5lbCAxIl06MiBkMlsi5LiL5Y+RPGJyLz5rZXJuZWwgMiJdOjIgZDNbIuS4i+WPkTxici8+a2VybmVsIDMiXToyIGRkWyLigKYiXToyIGRuWyLkuIvlj5E8YnIvPmtlcm5lbCBuIl06MiBzcGFjZToxCiAgczFbIk5QVSBUaW1lIl06MiBzcGFjZToxIGUxWyLmiafooYw8YnIvPmtlcm5lbCAxIl06MiBlMlsi5omn6KGMPGJyLz5rZXJuZWwgMiJdOjIgZTNbIuaJp+ihjDxici8+a2VybmVsIDMiXToyIGVkWyLigKYiXToyIGVuWyLmiafooYw8YnIvPmtlcm5lbCBuIl06MgoKICBkMSAtLT4gZTEKICBkMiAtLT4gZTIKICBkMyAtLT4gZTMKICBkbiAtLT4gZW4KCiAgY2xhc3NEZWYgaGRyIGZpbGw6I2VlZSxzdHJva2U6Izk5OSxjb2xvcjojMDAwCiAgY2xhc3NEZWYgaG9zdCBmaWxsOiM1QjlCRDUsY29sb3I6I2ZmZixzdHJva2U6IzFGNEU3OQogIGNsYXNzRGVmIGRldiBmaWxsOiM3MEFENDcsY29sb3I6I2ZmZixzdHJva2U6IzM4NTcyMwoKICBjbGFzcyBzMCxzMSBoZHIKICBjbGFzcyBkMSxkMixkMyxkZCxkbiBob3N0CiAgY2xhc3MgZTEsZTIsZTMsZWQsZW4gZGV2",
+        "cannFeatures": [
+          "npugraph"
+        ]
+      },
+      {
+        "file": "prefetch_principles.md",
+        "title": "NPU Prefetch 原理",
+        "sidebarTitle": "预取原理",
+        "sourceRepo": "cann-recipes-docs",
+        "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+        "sourcePath": "cann_features/zh/prefetch_principles.md",
+        "translations": {
+          "en": {
+            "title": "NPU Prefetch Principles",
+            "sidebarTitle": "Prefetch Principles",
+            "sourcePath": "cann_features/en/prefetch_principles.md"
+          }
+        },
+        "coverImage": "mermaid:YmxvY2stYmV0YQogIGNvbHVtbnMgMTIKICBzMFsi5Li75omn6KGM5rWBIl06MSBhWyLpnZ7orr/lrZjnk7bpoojnrpflrZA8YnIvPuWmgiBSTVNOb3JtIC8gRGlzcGF0Y2giXTozIGJbIk1hdE11bCAvIEdNTTxici8+55uu5qCH566X5a2QIl06NSBzcGFjZTozCiAgczFbIlByZWZldGNoIl06MSBzcGFjZToxIHBbIuaPkOWJjemihOWPluebruagh+adg+mHjTxici8+SEJNIOKGkiBMMiBDYWNoZSJdOjIgc3BhY2U6NwoKICBhIC0tPiBwCiAgcCAtLT4gYgoKICBjbGFzc0RlZiBoZHIgZmlsbDojZWVlLHN0cm9rZTojOTk5LGNvbG9yOiMwMDAKICBjbGFzc0RlZiBtYWluIGZpbGw6IzVCOUJENSxjb2xvcjojZmZmLHN0cm9rZTojMUY0RTc5CiAgY2xhc3NEZWYgcHJlIGZpbGw6IzcwQUQ0Nyxjb2xvcjojZmZmLHN0cm9rZTojMzg1NzIzCgogIGNsYXNzIHMwLHMxIGhkcgogIGNsYXNzIGEsYiBtYWluCiAgY2xhc3MgcCBwcmU=",
+        "cannFeatures": [
+          "prefetch"
+        ]
+      },
+      {
+        "file": "super_kernel.md",
+        "title": "SuperKernel",
+        "sidebarTitle": "SuperKernel 原理",
+        "sourceRepo": "cann-recipes-docs",
+        "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+        "sourcePath": "cann_features/zh/super_kernel.md",
+        "translations": {
+          "en": {
+            "title": "SuperKernel",
+            "sidebarTitle": "SuperKernel Principles",
+            "sourcePath": "cann_features/en/super_kernel.md"
+          }
+        },
+        "coverImage": "cann_features/figures/superkernel.png",
+        "cannFeatures": [
+          "superkernel"
+        ]
+      }
+    ]
+  }
+}

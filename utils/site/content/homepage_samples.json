@@ -1,0 +1,13 @@
+{
+  "Infer": [
+    { "model": "kimi_k3", "subcategory": "llm", "docPath": "llm/kimi_k3" },
+    { "model": "davinci_magihuman", "subcategory": "multimodal", "docPath": "multimodal/davinci_magihuman" }
+
+  ],
+  "Train": [
+    { "model": "deepseek_v4", "subcategory": "pretrain", "docPath": "pretrain/deepseek_v4" }
+  ],
+  "Embodied_AI": [
+    { "model": "vggt", "subcategory": "3d_vision", "docPath": "3d_vision/vggt" }
+  ]
+}
