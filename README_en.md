@@ -13,7 +13,7 @@
 <p align="center">
   <a href="#-overview">📖 Overview</a> ·
   <a href="#-content-categories">🗂️ Content Categories</a> ·
-  <a href="#documentation-website">🧭 Usage</a> ·
+  <a href="#-documentation-website">🧭 Usage</a> ·
   <a href="#-project-structure">📁 Project Structure</a> ·
   <a href="#-contributing">🤝 Contributing</a>
 </p>
@@ -34,13 +34,34 @@ The documentation serves the following objectives:
 
 > The online site only provides a portal for reading and searching documents. Technical documentation remains the core content of this repository.
 
+---
+
+## 🧭 Source Code and Runtime Environment
+
+### Obtain the Source Code
+
+Run the following commands to obtain the repository source code:
+
+```shell
+git clone https://gitcode.com/cann/cann-recipes-docs.git
+cd cann-recipes-docs
+```
+
+### Runtime Environment
+
+The Python scripts in this repository require **Python 3.11**. Run the following command to verify the Python version:
+
+```shell
+python --version
+```
+
 ### Documentation Website
 
 The repository includes a static documentation website under [`utils/site/`](utils/site/). The website reads documents and image files from the current repository. Run the following commands from the repository root to generate the indexes and start the local website:
 
-```powershell
-python utils\site\build_content.py
-python utils\site\serve.py --port 8001
+```shell
+python utils/site/build_content.py
+python utils/site/serve.py --port 8001
 ```
 
 Then, go to `http://127.0.0.1:8001`. For the website development specifications and validation checklist, see [`blog_site_skill.md`](skill/blog_site_skill.md) (Chinese). For descriptions of website files, see [`site/README.md`](utils/site/README.md) (Chinese).
@@ -195,9 +216,15 @@ Then, go to `http://127.0.0.1:8001`. For the website development specifications 
 │     ├─ serve.py                 # Local development server
 │     └─ content/
 │        └─ homepage_samples.json # Model sample configuration for the homepage
+├─ .gitignore                    # Ignore rules for local and generated files
 ├─ CONTRIBUTION.md               # Contribution guide
 ├─ LICENSE                       # Apache 2.0 License
-└─ README.md                     # Project description
+├─ DISCLAIMER.md                 # Disclaimer
+├─ OAT.xml                       # Open-source compliance configuration
+├─ README.md                     # Chinese project description
+├─ README_en.md                  # English project description
+├─ SECURITY.md                   # Chinese security policy
+└─ SECURITY_en.md                # English security policy
 ```
 
 </details>
@@ -211,6 +238,19 @@ We welcome all forms of documentation contributions, including new optimization 
 For the document directory structure, static fields, and validation process, see the [Contribution Guide](CONTRIBUTION.md) (Chinese).
 
 If you have questions or are interested in contributing, join the [Recipes SIG regular meeting](https://gitcode.com/cann/community/blob/master/CANN/sigs/recipes/README.md) (Chinese) to talk with us.
+
+---
+
+## 📝 License and Disclaimer
+
+### License Applicability
+
+- This repository as a whole is licensed under Apache License 2.0. For details, see [LICENSE](./LICENSE).
+- If a directory contains a separate license file, that license applies. Otherwise, Apache License 2.0 applies.
+
+### Other Notices
+
+- For the full disclaimer, see [DISCLAIMER](DISCLAIMER.md) (Chinese).
 
 ---
 

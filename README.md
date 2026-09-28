@@ -34,13 +34,34 @@
 
 > 在线页面仅作为文档阅读和检索入口，仓库核心仍是技术文档内容。
 
+---
+
+## 🧭 获取源码与运行环境
+
+### 获取源码
+
+执行以下命令获取仓库源码：
+
+```shell
+git clone https://gitcode.com/cann/cann-recipes-docs.git
+cd cann-recipes-docs
+```
+
+### 运行环境
+
+本仓库的 Python 脚本要求 **Python 3.11**。执行以下命令确认 Python 版本：
+
+```shell
+python --version
+```
+
 ### 文档网站
 
 仓库包含静态文档网站的工程，位于 [`utils/site/`](utils/site/)。网站从当前仓库的文档和图片文件读取内容，在仓库根目录执行以下命令可生成索引并启动本地站点：
 
-```powershell
-python utils\site\build_content.py
-python utils\site\serve.py --port 8001
+```shell
+python utils/site/build_content.py
+python utils/site/serve.py --port 8001
 ```
 
 然后访问 `http://127.0.0.1:8001`。站点开发规范和验证清单见 [`blog_site_skill.md`](skill/blog_site_skill.md)，站点文件说明见 [`site/README.md`](utils/site/README.md)。
@@ -195,9 +216,15 @@ python utils\site\serve.py --port 8001
 │     ├─ serve.py                 # 本地开发服务器
 │     └─ content/
 │        └─ homepage_samples.json # 首页展示的模型样例配置
+├─ .gitignore                    # 本地与生成文件忽略规则
 ├─ CONTRIBUTION.md               # 贡献指南
 ├─ LICENSE                       # Apache 2.0 许可证
-└─ README.md                     # 项目说明
+├─ DISCLAIMER.md                 # 免责声明
+├─ OAT.xml                       # 开源合规检查配置
+├─ README.md                     # 中文项目说明
+├─ README_en.md                  # 英文项目说明
+├─ SECURITY.md                   # 中文安全策略
+└─ SECURITY_en.md                # 英文安全策略
 ```
 
 </details>
@@ -211,6 +238,19 @@ python utils\site\serve.py --port 8001
 请参阅 [贡献指南](CONTRIBUTION.md) 了解文档目录、静态字段和校验流程。
 
 若有疑问或共建意向，可以参与[Recipes SIG 例会](https://gitcode.com/cann/community/blob/master/CANN/sigs/recipes/README.md)与我们交流~
+
+---
+
+## 📝 许可证与声明
+
+### 许可协议适用规则
+
+- 本仓库整体遵循 Apache 2.0 协议，详见 [LICENSE](./LICENSE)。
+- 目录包含独立 License 文件时，以该 License 为准；如不存在 License 文件，则遵循 Apache 2.0 协议。
+
+### 其他声明
+
+- 完整免责声明见 [DISCLAIMER](DISCLAIMER.md)
 
 ---
 
