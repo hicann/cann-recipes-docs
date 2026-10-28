@@ -1,0 +1,135 @@
+{
+    "CANN_homepage": [
+        {
+            "module_name":"训练",
+            "module_order":1,
+            "repository_url":"https://gitcode.com/cann/cann-recipes-train",
+            "projects":[
+                {
+                    "name":"基于PyTorch原生框架的DeepSeek-V4.1-Flash 模型预训练实践",
+                    "description":"CANN社区基于TorchTitan-NPU完成DeepSeek-V4/V4.1预训练验证，涵盖长序列与低精度训练。",
+                    "url":"https://gitcode.com/cann/cann-recipes-train/blob/master/docs/llm_pretrain/ascend950_superpod_moe_pretrain_system_reference.md",
+                    "order":1
+                },
+                {
+                    "name":"基于鲲鹏CPU、昇腾950和昇腾协同的Agentic RL训练实践",
+                    "description":"鲲鹏适配AgentENV支撑Agentic RL，CANN支持DSV4低精训练、长序列CP，RL基础设施开源。",
+                    "url":"https://gitcode.com/cann/cann-recipes-train/tree/master/docs/llm_rl/kunpeng_ascend_agentic_rl_infrastructure.md",
+                    "order":2
+                },
+                {
+                    "name":"DeepSeek-V4 DSpark草稿模型昇腾训练实践",
+                    "description":"CANN社区基于DeepSpec构建昇腾原生的DSpark草稿模型训练方案。",
+                    "url":"https://gitcode.com/cann/cann-recipes-train/tree/master/llm_sft/DeepSpec",
+                    "order":3
+                },
+                {
+                    "name":"昇腾950低精度量化训练：MXFP4/MXFP8与HiF8实践",
+                    "description":"CANN社区基于torchao构建昇腾950低精训练方案，支持DeepSeek V4/4.1接入多种低精策略。",
+                    "url":"https://gitcode.com/cann/cann-recipes-train/tree/master/docs/llm_pretrain/ascend950/low_precision_training.md",
+                    "order":4
+                }
+            ]
+        },
+        {
+            "module_name":"推理",
+            "module_order":2,
+            "repository_url":"https://gitcode.com/cann/cann-recipes-infer",
+            "projects":[
+                {
+                    "name":"DeepSeek-V4.1-Flash CANN优化实践",
+                    "description":"DeepSeek-V4.1-Flash是DeepSeek-V4系列的混合大模型，原生支持多模态，引入Engram架构实现模型能力进一步飞跃。",
+                    "url":"https://gitcode.com/cann/cann-recipes-infer/blob/master/docs/models/deepseek_v4_1/deepseek_v4.1_flash_cann_tech_report.md",
+                    "order":1
+                },
+                {
+                    "name":"DeepSeek-V4.1-Flash 单机部署低时延推理优化实践",
+                    "description":"通过MOE TP、Attention异构分卡、CCU通信与DSpark投机推理，实现2.5ms极低时延。",
+                    "url":"https://gitcode.com/cann/cann-recipes-infer/tree/master/docs/models/deepseek_v4_1/deepseek_v4.1_low_latency_tp_guide.md",
+                    "order":2
+                },
+                {
+                    "name":"DeepSeek-V4.1-Flash 基于vllm推理部署实践",
+                    "description":"基于vLLM-Ascend全链路优化，支持SWA独立KV Pool、CED、mooncake与dspark异步调度。",
+                    "url":"https://gitcode.com/cann/cann-recipes-infer/blob/master/models/deepseek_v4_1/README.md",
+                    "order":3
+                },
+                {
+                    "name":"DeepSeek-V4.1-Flash 单卡部署推理优化实践",
+                    "description":"单卡部署DSV4.1-flash，通过MOE权重CPU卸载、热专家标定与CPU-NPU双流并行。",
+                    "url":"https://gitcode.com/cann/cann-recipes-infer/blob/master/docs/models/deepseek_v4_1/dsv41-flash-950-single-card.md",
+                    "order":4
+                }
+            ]
+        },
+        {
+            "module_name":"模型量化",
+            "module_order":3,
+            "repository_url":"https://gitcode.com/cann/cann-recipes-docs",
+            "projects":[
+                {
+                    "name":"Qwen3.6-MoE量化样例",
+                    "description":"面向Atlas A3的Qwen3.6-MoE精度测量、量化、数据提取和PTQ全流程样例，介绍了一种在4bit量化下掉点较少的优化样例。",
+                    "url":"https://gitcode.com/cann/amct/blob/master/examples/models/qwen3.6/Qwen3.6-Moe.md",
+                    "order":1
+                },
+                {
+                    "name":"AMCT 低精度量化Agent实践",
+                    "description":"CANN社区基于AMCT围绕DeepSeek-V4/V4.1完成模型接入、方案推荐、量化执行、精度验证与部署导出，构建端到端自动化流程。",
+                    "url":"https://gitcode.com/cann/amct/blob/master/examples/models/deepseekv4.1/DeepSeekV4.1-Flash-Quantization-Agent.md",
+                    "order":2
+                }
+            ]
+        },
+        {
+            "module_name":"具身智能",
+            "module_order":4,
+            "repository_url":"https://gitcode.com/cann/cann-recipes-embodied-ai",
+            "projects":[
+                {
+                    "name":"Pi0通用机器人控制训练样例",
+                    "description":"面向Atlas A2的Pi0通用机器人控制训练样例，实现对机器人操作任务的精细控制。",
+                    "url":"https://gitcode.com/cann/cann-recipes-embodied-ai/tree/master/manipulation/pi0/train",
+                    "order":1
+                },
+                {
+                    "name":"SmolVLA轻量VLA训练样例",
+                    "description":"面向Atlas A2的SmolVLA分布式训练样例，介绍轻量级VLA模型的低成本操作策略学习实践。",
+                    "url":"https://gitcode.com/cann/cann-recipes-embodied-ai/tree/master/manipulation/smolvla/train",
+                    "order":2
+                },
+                {
+                    "name":"VGGT三维视觉推理样例",
+                    "description":"面向Atlas A2/A3的VGGT三维视觉推理样例，实现从多视角图像一步估计相机位姿、点云与深度。",
+                    "url":"https://gitcode.com/cann/cann-recipes-embodied-ai/tree/master/3d_vision/vggt",
+                    "order":3
+                },
+                {
+                    "name":"NMR人形动作重定向训练样例",
+                    "description":"面向Atlas A2的NMR神经运动重定向训练样例，将人类SMPL-X动作重定向到Unitree G1人形机器人。",
+                    "url":"https://gitcode.com/cann/cann-recipes-embodied-ai/tree/master/locomotion/NMR",
+                    "order":4
+                }
+            ]
+        },
+        {
+            "module_name":"鸿蒙推理",
+            "module_order":5,
+            "repository_url":"https://gitcode.com/cann/cann-recipes-harmony-infer",
+            "projects":[
+                {
+                    "name":"QQ音乐声伴分离鸿蒙推理优化实践",
+                    "description":"QQ音乐声伴分离业务模型中使用Ascend C实现BandNorm等算子在鸿蒙设备上的高性能推理部署。",
+                    "url":"https://gitcode.com/cann/cann-recipes-harmony-infer/blob/master/ops/ascendc/docs/custom-npu_bandNorm.md",
+                    "order":1
+                },
+                {
+                    "name":"Sobel边缘检测算法鸿蒙推理实践",
+                    "description":"Ascend C实现Sobel算子，同时构建Soble单算子模型，在鸿蒙设备上推理部署。",
+                    "url":"https://gitcode.com/cann/cann-recipes-harmony-infer/blob/master/ops/ascendc/docs/custom-npu_sobel.md",
+                    "order":2
+                }
+            ]
+        }
+    ]
+}

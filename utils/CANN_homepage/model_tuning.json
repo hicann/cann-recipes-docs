@@ -1,0 +1,19 @@
+{
+  "model_tuning": [
+    {
+      "name": "DeepSeek-V4模型推理优化实践",
+      "order": 1,
+      "url": "https://gitcode.com/cann/cann-recipes-infer/blob/master/docs/models/deepseek_v4/deepseek_v4_inference_guide.md"
+    },
+    {
+      "name": "Qwen3-MoE模型低时延推理优化实践",
+      "order": 2,
+      "url": "https://gitcode.com/cann/cann-recipes-infer/blob/master/docs/models/qwen3_moe/qwen3_moe_optimization.md"
+    },
+    {
+      "name": "SANA-Video多模态模型推理优化实践",
+      "order": 3,
+      "url": "https://gitcode.com/cann/cann-recipes-infer/blob/master/docs/models/sana-video/SANA-Video_optimization.md"
+    }
+  ]
+}
