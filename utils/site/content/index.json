@@ -1346,11 +1346,283 @@
     "basePath": "train",
     "subcategories": [
       {
-        "name": "pretrain",
+        "name": "features",
         "models": [
           {
+            "name": "features",
+            "docPath": "features",
+            "reports": [
+              {
+                "file": "history_tree_dynamic_rl.md",
+                "title": "History Tree Dynamic RL 投机解码",
+                "sidebarTitle": "History Tree Dynamic RL",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/features/zh/history_tree_dynamic_rl.md",
+                "translations": {},
+                "cover": {
+                  "type": "auto"
+                }
+              },
+              {
+                "file": "length_aware_resampler.md",
+                "title": "Length-Aware Resampler：基于历史 Response 长度的 Rollout 重采样优化",
+                "sidebarTitle": "Length-Aware Resampler",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/features/zh/length_aware_resampler.md",
+                "translations": {},
+                "cover": {
+                  "type": "auto"
+                }
+              },
+              {
+                "file": "rollout_rebalance.md",
+                "title": "RL On-Policy 推理场景的序列级均衡调度引擎",
+                "sidebarTitle": "Rollout Rebalance",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/features/zh/rollout_rebalance.md",
+                "translations": {},
+                "cover": {
+                  "type": "auto"
+                }
+              },
+              {
+                "file": "sam_speculative_decoding.md",
+                "title": "基于 SAM（后缀自动机） 的无损投机推理技术",
+                "sidebarTitle": "SAM 投机推理",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/features/zh/sam_speculative_decoding.md",
+                "translations": {},
+                "cover": {
+                  "type": "auto"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "llm_pretrain",
+        "models": [
+          {
+            "name": "ascend950",
+            "docPath": "llm_pretrain/ascend950",
+            "reports": [
+              {
+                "file": "ascend950_superpod_moe_pretrain_system_reference.md",
+                "title": "基于昇腾950超节点的万亿MoE模型预训练系统参考实践",
+                "sidebarTitle": "950 超节点预训练",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/llm_pretrain/ascend950/zh/ascend950_superpod_moe_pretrain_system_reference.md",
+                "translations": {},
+                "hardware": [
+                  "ascend-950"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              },
+              {
+                "file": "ascendc_autofuse.md",
+                "title": "Ascend C 算子自动融合",
+                "sidebarTitle": "AscendC 自动融合",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/llm_pretrain/ascend950/zh/ascendc_autofuse.md",
+                "translations": {},
+                "coverImage": "train/llm_pretrain/ascend950/figures/ascend950/operators/autofuse-backend.webp",
+                "hardware": [
+                  "ascend-950"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              },
+              {
+                "file": "deployment.md",
+                "title": "PyTorch 原生训练框架下的 950 超节点部署策略",
+                "sidebarTitle": "950 超节点部署",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/llm_pretrain/ascend950/zh/deployment.md",
+                "translations": {},
+                "coverImage": "train/llm_pretrain/ascend950/figures/ascend950/deployment/supernode-architecture.webp",
+                "hardware": [
+                  "ascend-950"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              },
+              {
+                "file": "engram.md",
+                "title": "DeepSeek-V4.1-Flash Engram 基于 950 的训练实现",
+                "sidebarTitle": "Engram 训练实现",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/llm_pretrain/ascend950/zh/engram.md",
+                "translations": {},
+                "coverImage": "train/llm_pretrain/ascend950/figures/ascend950/engram/engram-memory-architecture.png",
+                "hardware": [
+                  "ascend-950"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              },
+              {
+                "file": "flexmuon.md",
+                "title": "FlexMuon：面向分布式训练的通信、内存与计算协同优化",
+                "sidebarTitle": "FlexMuon 协同优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/llm_pretrain/ascend950/zh/flexmuon.md",
+                "translations": {},
+                "coverImage": "train/llm_pretrain/ascend950/figures/ascend950/flexmuon/A2A.png",
+                "hardware": [
+                  "ascend-950"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              },
+              {
+                "file": "graphtrainer.md",
+                "title": "训练图优化能力：Profile-aware 通算与 CV 掩盖",
+                "sidebarTitle": "训练图优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/llm_pretrain/ascend950/zh/graphtrainer.md",
+                "translations": {},
+                "coverImage": "train/llm_pretrain/ascend950/figures/ascend950/graphtrainer/graphtrainer-overview.svg",
+                "hardware": [
+                  "ascend-950"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              },
+              {
+                "file": "high_availability.md",
+                "title": "面向千卡、万卡集群的预训练高可用能力",
+                "sidebarTitle": "预训练高可用",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/llm_pretrain/ascend950/zh/high_availability.md",
+                "translations": {},
+                "coverImage": "train/llm_pretrain/ascend950/figures/ascend950/high_availability/training-recovery-overview.png",
+                "hardware": [
+                  "ascend-950"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              },
+              {
+                "file": "long_context.md",
+                "title": "128P 规模 950 超节点实现 1M 长序列部署能力",
+                "sidebarTitle": "1M 长序列部署",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/llm_pretrain/ascend950/zh/long_context.md",
+                "translations": {},
+                "coverImage": "train/llm_pretrain/ascend950/figures/ascend950/long_context/fsdp-cp-layout.webp",
+                "hardware": [
+                  "ascend-950"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              },
+              {
+                "file": "low_precision_training.md",
+                "title": "基于DeepSeek的昇腾950低精度量化训练实践",
+                "sidebarTitle": "950 低精度训练",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/llm_pretrain/ascend950/zh/low_precision_training.md",
+                "translations": {},
+                "coverImage": "train/llm_pretrain/ascend950/figures/ascend950/low_precision_training/low_precision_enablement.svg",
+                "hardware": [
+                  "ascend-950"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              },
+              {
+                "file": "memory_optimization.md",
+                "title": "950 全局统一虚拟地址：整网内存优化",
+                "sidebarTitle": "950 内存优化",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/llm_pretrain/ascend950/zh/memory_optimization.md",
+                "translations": {},
+                "coverImage": "train/llm_pretrain/ascend950/figures/ascend950/memory_optimization/node-recomputation.png",
+                "hardware": [
+                  "ascend-950"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              },
+              {
+                "file": "multimodal_sft.md",
+                "title": "DeepSeek-V4.1 图文多模态 SFT 训练",
+                "sidebarTitle": "图文多模态 SFT",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/llm_pretrain/ascend950/zh/multimodal_sft.md",
+                "translations": {},
+                "coverImage": "train/llm_pretrain/ascend950/figures/ascend950/multimodal_sft/interleaved-message-format.png",
+                "hardware": [
+                  "ascend-950"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              },
+              {
+                "file": "tilelang_integration.md",
+                "title": "TileLang 算子接入",
+                "sidebarTitle": "TileLang 算子接入",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/llm_pretrain/ascend950/zh/tilelang_integration.md",
+                "translations": {},
+                "coverImage": "train/llm_pretrain/ascend950/figures/ascend950/operators/tilelang-abstraction.webp",
+                "hardware": [
+                  "ascend-950"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              },
+              {
+                "file": "training_agents.md",
+                "title": "训练 Agent 性能调优与精度异常诊断实践",
+                "sidebarTitle": "训练 Agent 调优",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/llm_pretrain/ascend950/zh/training_agents.md",
+                "translations": {},
+                "coverImage": "train/llm_pretrain/ascend950/figures/ascend950/training_agents/kpbot-workflow.webp",
+                "hardware": [
+                  "ascend-950"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              }
+            ]
+          },
+          {
             "name": "deepseek_v3",
-            "docPath": "pretrain/deepseek_v3",
+            "docPath": "llm_pretrain/deepseek_v3",
             "reports": [
               {
                 "file": "deepseek-v3_pre_train_hif8_mxfp8.md",
@@ -1358,15 +1630,15 @@
                 "sidebarTitle": "HiF8/MXFP8 预训练",
                 "sourceRepo": "cann-recipes-docs",
                 "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
-                "sourcePath": "train/pretrain/deepseek_v3/zh/deepseek-v3_pre_train_hif8_mxfp8.md",
+                "sourcePath": "train/llm_pretrain/deepseek_v3/zh/deepseek-v3_pre_train_hif8_mxfp8.md",
                 "translations": {
                   "en": {
                     "title": "HiF8 Precision and Performance Dual Breakthrough — Low-Precision Optimization Practice for Large-Model Training on the Ascend 950DT",
                     "sidebarTitle": "HiF8/MXFP8 Pretrain",
-                    "sourcePath": "train/pretrain/deepseek_v3/en/deepseek-v3_pre_train_hif8_mxfp8.md"
+                    "sourcePath": "train/llm_pretrain/deepseek_v3/en/deepseek-v3_pre_train_hif8_mxfp8.md"
                   }
                 },
-                "coverImage": "train/pretrain/deepseek_v3/figures/image1.png",
+                "coverImage": "train/llm_pretrain/deepseek_v3/figures/image1.png",
                 "quantization": [
                   "hif8",
                   "mxfp8"
@@ -1385,7 +1657,7 @@
           },
           {
             "name": "deepseek_v32",
-            "docPath": "pretrain/deepseek_v32",
+            "docPath": "llm_pretrain/deepseek_v32",
             "reports": [
               {
                 "file": "deepseek-v32_pre_train_optimization.md",
@@ -1393,15 +1665,15 @@
                 "sidebarTitle": "DeepSeek-V3.2 预训练优化",
                 "sourceRepo": "cann-recipes-docs",
                 "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
-                "sourcePath": "train/pretrain/deepseek_v32/zh/deepseek-v32_pre_train_optimization.md",
+                "sourcePath": "train/llm_pretrain/deepseek_v32/zh/deepseek-v32_pre_train_optimization.md",
                 "translations": {
                   "en": {
                     "title": "CANN + TorchTitan: Ascend Optimization Practice for DeepSeek-V3.2 32k Long-Sequence Pretraining",
                     "sidebarTitle": "DeepSeek-V3.2 Pretrain",
-                    "sourcePath": "train/pretrain/deepseek_v32/en/deepseek-v32_pre_train_optimization.md"
+                    "sourcePath": "train/llm_pretrain/deepseek_v32/en/deepseek-v32_pre_train_optimization.md"
                   }
                 },
-                "coverImage": "train/pretrain/deepseek_v32/figures/EP_optimize_before.png",
+                "coverImage": "train/llm_pretrain/deepseek_v32/figures/EP_optimize_before.png",
                 "parallelism": [
                   "data-parallel",
                   "tensor-parallel",
@@ -1429,7 +1701,7 @@
           },
           {
             "name": "deepseek_v4",
-            "docPath": "pretrain/deepseek_v4",
+            "docPath": "llm_pretrain/deepseek_v4",
             "reports": [
               {
                 "file": "deepseek-v4_torchtitan_npu_autofuse.md",
@@ -1437,15 +1709,15 @@
                 "sidebarTitle": "训练优化",
                 "sourceRepo": "cann-recipes-docs",
                 "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
-                "sourcePath": "train/pretrain/deepseek_v4/zh/deepseek-v4_torchtitan_npu_autofuse.md",
+                "sourcePath": "train/llm_pretrain/deepseek_v4/zh/deepseek-v4_torchtitan_npu_autofuse.md",
                 "translations": {
                   "en": {
                     "title": "DeepSeek-V4 Ascend Training Support: Minimalist Training Optimization Practice of TorchTitan-NPU + AutoFuse on the CANN Platform",
                     "sidebarTitle": "Training Optimization",
-                    "sourcePath": "train/pretrain/deepseek_v4/en/deepseek-v4_torchtitan_npu_autofuse.md"
+                    "sourcePath": "train/llm_pretrain/deepseek_v4/en/deepseek-v4_torchtitan_npu_autofuse.md"
                   }
                 },
-                "coverImage": "train/pretrain/deepseek_v4/figures/Architecture.png",
+                "coverImage": "train/llm_pretrain/deepseek_v4/figures/Architecture.png",
                 "frameworks": [
                   "torchtitan"
                 ],
@@ -1458,11 +1730,11 @@
         ]
       },
       {
-        "name": "rl",
+        "name": "llm_rl",
         "models": [
           {
             "name": "deepseek",
-            "docPath": "rl/deepseek",
+            "docPath": "llm_rl/deepseek",
             "reports": [
               {
                 "file": "deepseek_rl_train_optimization.md",
@@ -1470,15 +1742,15 @@
                 "sidebarTitle": "DeepSeek RL 训练优化",
                 "sourceRepo": "cann-recipes-docs",
                 "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
-                "sourcePath": "train/rl/deepseek/zh/deepseek_rl_train_optimization.md",
+                "sourcePath": "train/llm_rl/deepseek/zh/deepseek_rl_train_optimization.md",
                 "translations": {
                   "en": {
                     "title": "DeepSeek-R1 Model RL Training Optimization Practice Based on the verl Frontend & A3 Cluster",
                     "sidebarTitle": "DeepSeek RL Optimization",
-                    "sourcePath": "train/rl/deepseek/en/deepseek_rl_train_optimization.md"
+                    "sourcePath": "train/llm_rl/deepseek/en/deepseek_rl_train_optimization.md"
                   }
                 },
-                "coverImage": "train/rl/deepseek/figures/image2.png",
+                "coverImage": "train/llm_rl/deepseek/figures/image2.png",
                 "parallelism": [
                   "data-parallel",
                   "tensor-parallel",
@@ -1504,8 +1776,30 @@
             ]
           },
           {
+            "name": "kunpeng_ascend_agentic_rl",
+            "docPath": "llm_rl/kunpeng_ascend_agentic_rl",
+            "reports": [
+              {
+                "file": "kunpeng_ascend_agentic_rl_infrastructure.md",
+                "title": "基于鲲鹏 CPU、昇腾 950 和灵衢协同的 Agentic RL 训练实践",
+                "sidebarTitle": "Agentic RL 训练",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/llm_rl/kunpeng_ascend_agentic_rl/zh/kunpeng_ascend_agentic_rl_infrastructure.md",
+                "translations": {},
+                "coverImage": "train/llm_rl/kunpeng_ascend_agentic_rl/figures/dsv4_figures/arch_torchtitan.svg",
+                "hardware": [
+                  "ascend-950"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              }
+            ]
+          },
+          {
             "name": "qwen3_235B",
-            "docPath": "rl/qwen3/qwen3_235B",
+            "docPath": "llm_rl/qwen3/qwen3_235B",
             "reports": [
               {
                 "file": "qwen3_235B_32k_longseq_rl_train_optimization.md",
@@ -1513,15 +1807,15 @@
                 "sidebarTitle": "训练优化",
                 "sourceRepo": "cann-recipes-docs",
                 "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
-                "sourcePath": "train/rl/qwen3/qwen3_235B/zh/qwen3_235B_32k_longseq_rl_train_optimization.md",
+                "sourcePath": "train/llm_rl/qwen3/qwen3_235B/zh/qwen3_235B_32k_longseq_rl_train_optimization.md",
                 "translations": {
                   "en": {
                     "title": "Qwen3-235B 32K Long-Sequence RL Training Optimization Practice",
                     "sidebarTitle": "Training Optimization",
-                    "sourcePath": "train/rl/qwen3/qwen3_235B/en/qwen3_235B_32k_longseq_rl_train_optimization.md"
+                    "sourcePath": "train/llm_rl/qwen3/qwen3_235B/en/qwen3_235B_32k_longseq_rl_train_optimization.md"
                   }
                 },
-                "coverImage": "train/rl/qwen3/qwen3_235B/figures/image1.png",
+                "coverImage": "train/llm_rl/qwen3/qwen3_235B/figures/image1.png",
                 "parallelism": [
                   "data-parallel",
                   "tensor-parallel",
@@ -1546,7 +1840,7 @@
           },
           {
             "name": "sam_decoding",
-            "docPath": "rl/qwen3/sam_decoding",
+            "docPath": "llm_rl/qwen3/sam_decoding",
             "reports": [
               {
                 "file": "sam_decoding.md",
@@ -1554,15 +1848,15 @@
                 "sidebarTitle": "投机解码",
                 "sourceRepo": "cann-recipes-docs",
                 "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
-                "sourcePath": "train/rl/qwen3/sam_decoding/zh/sam_decoding.md",
+                "sourcePath": "train/llm_rl/qwen3/sam_decoding/zh/sam_decoding.md",
                 "translations": {
                   "en": {
                     "title": "SAM Speculative Inference: A Powerful Accelerator for Long-Sequence Reinforcement Learning Training",
                     "sidebarTitle": "Speculative Decoding",
-                    "sourcePath": "train/rl/qwen3/sam_decoding/en/sam_decoding.md"
+                    "sourcePath": "train/llm_rl/qwen3/sam_decoding/en/sam_decoding.md"
                   }
                 },
-                "coverImage": "train/rl/qwen3/sam_decoding/figures/image35.png",
+                "coverImage": "train/llm_rl/qwen3/sam_decoding/figures/image35.png",
                 "parallelism": [
                   "tensor-parallel"
                 ],
@@ -1573,6 +1867,81 @@
                   "verl",
                   "vllm"
                 ],
+                "cover": {
+                  "type": "auto"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "llm_sft",
+        "models": [
+          {
+            "name": "deepspec_npu",
+            "docPath": "llm_sft/deepspec_npu",
+            "reports": [
+              {
+                "file": "deepspec_npu_report.md",
+                "title": "DeepSpec-NPU：DeepSeek-V4 DSpark 草稿模型昇腾训练实践",
+                "sidebarTitle": "DeepSpec DSpark 训练",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/llm_sft/deepspec_npu/zh/deepspec_npu_report.md",
+                "translations": {},
+                "coverImage": "train/llm_sft/deepspec_npu/figures/dspark.png",
+                "hardware": [
+                  "atlas-a3"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              }
+            ]
+          },
+          {
+            "name": "qwen36_ascendc",
+            "docPath": "llm_sft/qwen36_ascendc",
+            "reports": [
+              {
+                "file": "qwen36_ascendc_sft_report.md",
+                "title": "面向 cann-bench 的 AscendC 算子生成 SFT 训练实践",
+                "sidebarTitle": "AscendC 算子生成 SFT",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/llm_sft/qwen36_ascendc/zh/qwen36_ascendc_sft_report.md",
+                "translations": {},
+                "coverImage": "train/llm_sft/qwen36_ascendc/figures/sft.jpg",
+                "operator": [
+                  "ascendc"
+                ],
+                "hardware": [
+                  "atlas-a3"
+                ],
+                "cover": {
+                  "type": "auto"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "overview",
+        "models": [
+          {
+            "name": "capabilities",
+            "docPath": "overview/capabilities",
+            "reports": [
+              {
+                "file": "cann_capability_overview.md",
+                "title": "CANN 原子化特性能力总览",
+                "sidebarTitle": "CANN 能力总览",
+                "sourceRepo": "cann-recipes-docs",
+                "sourceRepoUrl": "https://gitcode.com/cann/cann-recipes-docs",
+                "sourcePath": "train/overview/capabilities/zh/cann_capability_overview.md",
+                "translations": {},
                 "cover": {
                   "type": "auto"
                 }

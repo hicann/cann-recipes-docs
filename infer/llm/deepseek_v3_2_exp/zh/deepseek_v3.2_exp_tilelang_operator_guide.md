@@ -514,7 +514,7 @@ Vector核使用多种专用缓冲区处理不同类型数据：
 
 ## 训练算子实现
 
-本章介绍DeepSeek-V3.2 中Tilelang-Ascend实现的8个训练算子。模型训练请参考：[链接](https://gitcode.com/cann/cann-recipes-train/blob/master/docs/llm_pretrain/deepseekv32_pre_train_optimization.md)，Tilelang算子替换请参考：[链接](https://gitcode.com/cann/torchtitan-npu/blob/master/docs/feature_guides/tilelang_ops.md)。
+本章介绍DeepSeek-V3.2 中Tilelang-Ascend实现的8个训练算子。模型训练请参考：[链接](../../../../train/llm_pretrain/deepseek_v32/zh/deepseek-v32_pre_train_optimization.md)，Tilelang算子替换请参考：[链接](https://gitcode.com/cann/torchtitan-npu/blob/master/docs/feature_guides/tilelang_ops.md)。
 
 ### 1、Rotary Position Embedding
 

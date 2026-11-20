@@ -20,8 +20,10 @@ infer/
 └─ recommendation/<model>/      # 推荐系统推理
 
 train/
-├─ pretrain/<model>/             # 预训练
-└─ rl/<model>/                   # 强化学习
+├─ features/                         # 训练通用特性
+├─ llm_pretrain/<model>/             # 预训练
+├─ llm_rl/<model>/                   # 强化学习
+└─ llm_sft/<model>/                  # 监督微调
 
 embodied_ai/
 ├─ 3d_vision/<model>/            # 3D 视觉
@@ -136,7 +138,7 @@ rg -n "\]\(|^\s*\[[^]]+\]:|<https?://|src=|href=" <document-path>
 新增文档时，必须同步检查仓库根目录的 `README.md`，并按文档所在目录更新对应分类下的“样例列表”：
 
 - `infer/llm/**`、`infer/multimodal/**`、`infer/recommendation/**` 分别更新“推理”下对应子分类的样例列表。
-- `train/pretrain/**`、`train/rl/**` 分别更新“训练”下对应子分类的样例列表。
+- `train/llm_pretrain/**`、`train/llm_rl/**`、`train/llm_sft/**` 分别更新“训练”下对应子分类的样例列表；`train/features/**` 更新训练特性样例列表。
 - `embodied_ai/3d_vision/**`、`embodied_ai/manipulation/**`、`embodied_ai/navigation/**`、`embodied_ai/world_model/**` 分别更新“具身智能”下对应子分类的样例列表。
 - `cann_features/**` 更新“CANN 原子特性”样例列表。
 

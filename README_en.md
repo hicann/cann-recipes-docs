@@ -120,21 +120,23 @@ Then, go to `http://127.0.0.1:8001`. For the website development specifications 
 
 | Application Scenario | Directory | Sample Content |
 |---|---|---|
-| Pre-training | `train/pretrain/` | Optimization solutions for large model pre-training. |
-| Reinforcement learning | `train/rl/` | RL training, long-sequence training, decoding strategy optimization, and related topics. |
+| Pre-training | `train/llm_pretrain/` | Optimization solutions for large model pre-training. |
+| Reinforcement learning | `train/llm_rl/` | RL training, long-sequence training, decoding strategy optimization, and related topics. |
+| Supervised fine-tuning | `train/llm_sft/` | DSpark draft-model and AscendC operator-generation SFT optimization. |
+| Training features | `train/features/` | General RL rollout balancing, resampling, and speculative decoding features. |
 
 #### Sample List
 
 **Pre-training**
 
-- [DeepSeek-V3](train/pretrain/deepseek_v3/en/deepseek-v3_pre_train_hif8_mxfp8.md)
-- [DeepSeek-V3.2](train/pretrain/deepseek_v32/en/deepseek-v32_pre_train_optimization.md)
-- [DeepSeek-V4](train/pretrain/deepseek_v4/en/deepseek-v4_torchtitan_npu_autofuse.md)
+- [DeepSeek-V3](train/llm_pretrain/deepseek_v3/en/deepseek-v3_pre_train_hif8_mxfp8.md)
+- [DeepSeek-V3.2](train/llm_pretrain/deepseek_v32/en/deepseek-v32_pre_train_optimization.md)
+- [DeepSeek-V4](train/llm_pretrain/deepseek_v4/en/deepseek-v4_torchtitan_npu_autofuse.md)
 
 **Reinforcement Learning**
 
-- [DeepSeek-R1](train/rl/deepseek/en/deepseek_rl_train_optimization.md)
-- [Qwen3](train/rl/qwen3/qwen3_235B/en/qwen3_235B_32k_longseq_rl_train_optimization.md)
+- [DeepSeek-R1](train/llm_rl/deepseek/en/deepseek_rl_train_optimization.md)
+- [Qwen3](train/llm_rl/qwen3/qwen3_235B/en/qwen3_235B_32k_longseq_rl_train_optimization.md)
 
 
 ### Embodied AI
@@ -195,8 +197,11 @@ Then, go to `http://127.0.0.1:8001`. For the website development specifications 
 │  ├─ multimodal/                # Multimodal inference documents
 │  └─ recommendation/            # Recommendation system documents
 ├─ train/                        # Training optimization practice documents
-│  ├─ pretrain/                  # Pre-training documents
-│  └─ rl/                        # Reinforcement learning training documents
+│  ├─ overview/                  # Training capability overview
+│  ├─ features/                  # General training features
+│  ├─ llm_pretrain/              # Pre-training documents
+│  ├─ llm_rl/                    # Reinforcement learning training documents
+│  └─ llm_sft/                   # Supervised fine-tuning documents
 ├─ embodied_ai/                  # Embodied AI optimization practice documents
 ├─ cann_features/                # CANN atomic feature documents
 ├─ skill/

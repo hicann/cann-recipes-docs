@@ -120,21 +120,42 @@ python utils/site/serve.py --port 8001
 
 | 应用场景 | 目录 | 示例内容 |
 |---|---|---|
-| 预训练 | `train/pretrain/` | 大模型预训练优化方案。 |
-| 强化学习 | `train/rl/` | RL 训练、长序列训练、解码策略优化等。 |
+| 预训练 | `train/llm_pretrain/` | 大模型预训练优化方案。 |
+| 强化学习 | `train/llm_rl/` | RL 训练、长序列训练、解码策略优化等。 |
+| 监督微调 | `train/llm_sft/` | DSpark 草稿模型与 AscendC 算子生成 SFT 优化方案。 |
+| 训练特性 | `train/features/` | RL rollout 均衡、重采样与投机解码等通用优化特性。 |
 
 #### 样例列表
 
+**训练能力总览**
+
+- [CANN 训练能力总览](train/overview/capabilities/zh/cann_capability_overview.md)
+
 **预训练**
 
-- [DeepSeek-V3](train/pretrain/deepseek_v3/zh/deepseek-v3_pre_train_hif8_mxfp8.md)
-- [DeepSeek-V3.2](train/pretrain/deepseek_v32/zh/deepseek-v32_pre_train_optimization.md)
-- [DeepSeek-V4](train/pretrain/deepseek_v4/zh/deepseek-v4_torchtitan_npu_autofuse.md)
+- [DeepSeek-V3](train/llm_pretrain/deepseek_v3/zh/deepseek-v3_pre_train_hif8_mxfp8.md)
+- [DeepSeek-V3.2](train/llm_pretrain/deepseek_v32/zh/deepseek-v32_pre_train_optimization.md)
+- [DeepSeek-V4](train/llm_pretrain/deepseek_v4/zh/deepseek-v4_torchtitan_npu_autofuse.md)
+- [昇腾950超节点预训练系统](train/llm_pretrain/ascend950/zh/ascend950_superpod_moe_pretrain_system_reference.md)
 
 **强化学习**
 
-- [DeepSeek-R1](train/rl/deepseek/zh/deepseek_rl_train_optimization.md)
-- [Qwen3](train/rl/qwen3/qwen3_235B/zh/qwen3_235B_32k_longseq_rl_train_optimization.md)
+- [DeepSeek-R1](train/llm_rl/deepseek/zh/deepseek_rl_train_optimization.md)
+- [Qwen3](train/llm_rl/qwen3/qwen3_235B/zh/qwen3_235B_32k_longseq_rl_train_optimization.md)
+- [鲲鹏、昇腾950与灵衢协同 Agentic RL](train/llm_rl/kunpeng_ascend_agentic_rl/zh/kunpeng_ascend_agentic_rl_infrastructure.md)
+- [SAM 投机推理](train/llm_rl/qwen3/sam_decoding/zh/sam_decoding.md)
+
+**监督微调**
+
+- [DeepSpec-NPU DSpark 草稿模型训练](train/llm_sft/deepspec_npu/zh/deepspec_npu_report.md)
+- [AscendC 算子生成 SFT](train/llm_sft/qwen36_ascendc/zh/qwen36_ascendc_sft_report.md)
+
+**训练特性**
+
+- [History Tree Dynamic RL 投机解码](train/features/zh/history_tree_dynamic_rl.md)
+- [Length-Aware Resampler](train/features/zh/length_aware_resampler.md)
+- [Rollout Rebalance](train/features/zh/rollout_rebalance.md)
+- [SAM 无损投机推理](train/features/zh/sam_speculative_decoding.md)
 
 
 ### 具身智能
@@ -195,8 +216,11 @@ python utils/site/serve.py --port 8001
 │  ├─ multimodal/                # 多模态推理文档
 │  └─ recommendation/            # 推荐系统文档
 ├─ train/                        # 训练类优化实践文档
-│  ├─ pretrain/                  # 预训练文档
-│  └─ rl/                        # 强化学习训练文档
+│  ├─ overview/                  # 训练能力总览
+│  ├─ features/                  # 强化学习通用特性文档
+│  ├─ llm_pretrain/              # 预训练文档
+│  ├─ llm_rl/                    # 强化学习训练文档
+│  └─ llm_sft/                   # 监督微调文档
 ├─ embodied_ai/                     # 具身智能优化实践文档
 ├─ cann_features/                # CANN 原子特性文档
 ├─ skill/

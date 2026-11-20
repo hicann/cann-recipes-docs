@@ -8,13 +8,13 @@
                 {
                     "name":"基于PyTorch原生框架的DeepSeek-V4.1-Flash 模型预训练实践",
                     "description":"CANN社区基于TorchTitan-NPU完成DeepSeek-V4/V4.1预训练验证，涵盖长序列与低精度训练。",
-                    "url":"https://gitcode.com/cann/cann-recipes-train/blob/master/docs/llm_pretrain/ascend950_superpod_moe_pretrain_system_reference.md",
+                    "url":"https://gitcode.com/cann/cann-recipes-docs/blob/master/train/llm_pretrain/ascend950/zh/ascend950_superpod_moe_pretrain_system_reference.md",
                     "order":1
                 },
                 {
                     "name":"基于鲲鹏CPU、昇腾950和昇腾协同的Agentic RL训练实践",
                     "description":"鲲鹏适配AgentENV支撑Agentic RL，CANN支持DSV4低精训练、长序列CP，RL基础设施开源。",
-                    "url":"https://gitcode.com/cann/cann-recipes-train/tree/master/docs/llm_rl/kunpeng_ascend_agentic_rl_infrastructure.md",
+                    "url":"https://gitcode.com/cann/cann-recipes-docs/blob/master/train/llm_rl/kunpeng_ascend_agentic_rl/zh/kunpeng_ascend_agentic_rl_infrastructure.md",
                     "order":2
                 },
                 {
@@ -26,7 +26,7 @@
                 {
                     "name":"昇腾950低精度量化训练：MXFP4/MXFP8与HiF8实践",
                     "description":"CANN社区基于torchao构建昇腾950低精训练方案，支持DeepSeek V4/4.1接入多种低精策略。",
-                    "url":"https://gitcode.com/cann/cann-recipes-train/tree/master/docs/llm_pretrain/ascend950/low_precision_training.md",
+                    "url":"https://gitcode.com/cann/cann-recipes-docs/blob/master/train/llm_pretrain/ascend950/zh/low_precision_training.md",
                     "order":4
                 }
             ]

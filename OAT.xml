@@ -38,7 +38,7 @@
                     desc="Rendered documentation is covered by the repository-level LICENSE"/>
                 <filteritem type="filename" name="*.json"
                     desc="JSON metadata and generated indexes do not support comments"/>
-                <filteritem type="filename" name="*.png|*.jpg|*.jpeg|*.svg"
+                <filteritem type="filename" name="*.png|*.jpg|*.jpeg|*.webp|*.svg"
                     desc="Documentation media assets do not carry source license headers"/>
             </filefilter>
             <filefilter name="copyrightPolicyFilter" desc="Files that cannot carry a source copyright header">
@@ -46,7 +46,7 @@
                     desc="Rendered documentation is covered by the repository-level LICENSE"/>
                 <filteritem type="filename" name="*.json"
                     desc="JSON metadata and generated indexes do not support comments"/>
-                <filteritem type="filename" name="*.png|*.jpg|*.jpeg|*.svg"
+                <filteritem type="filename" name="*.png|*.jpg|*.jpeg|*.webp|*.svg"
                     desc="Documentation media assets do not carry source copyright headers"/>
             </filefilter>
             <filefilter name="licenseFileNamePolicyFilter" desc="Filters for LICENSE file policies">
@@ -56,7 +56,7 @@
             <filefilter name="readmeOpenSourcefileNamePolicyFilter" desc="Filters for README.OpenSource policies">
             </filefilter>
             <filefilter name="binaryFileTypePolicyFilter" desc="Declared documentation media assets">
-                <filteritem type="filename" name="*.png|*.jpg|*.jpeg|*.svg"
+                <filteritem type="filename" name="*.png|*.jpg|*.jpeg|*.webp|*.svg"
                     desc="Images are expected binary or media files in this documentation repository"/>
             </filefilter>
         </filefilterlist>

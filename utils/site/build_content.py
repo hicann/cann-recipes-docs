@@ -112,9 +112,16 @@ def list_md_files(repo, dir_path):
 
 def walk_model_tree(repo, current_path, sub_name, relative_parts, models):
     reports = list_md_files(repo, f"{current_path}/zh")
-    if reports and relative_parts:
-        models.append({"name": relative_parts[-1],
-                       "docPath": f"{sub_name}/{'/'.join(relative_parts)}",
+    if reports:
+        if relative_parts:
+            model_name = relative_parts[-1]
+            doc_path = f"{sub_name}/{'/'.join(relative_parts)}"
+        else:
+            # Support source-style subcategories whose documents live directly
+            # under <subcategory>/zh, such as train/features/.
+            model_name = sub_name
+            doc_path = sub_name
+        models.append({"name": model_name, "docPath": doc_path,
                        "reports": reports})
     for child in list_tree(repo, current_path):
         if child["type"] == "tree" and child["name"] not in {"zh", "en", "figures"}:

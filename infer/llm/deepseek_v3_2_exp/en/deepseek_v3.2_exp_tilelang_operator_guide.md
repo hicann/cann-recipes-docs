@@ -514,7 +514,7 @@ Use an incremental merge sort strategy:
 
 ## Training Operator Implementations
 
-This chapter describes eight training operators implemented by TileLang-Ascend for DeepSeek-V3.2. For model training, refer to this [document](https://gitcode.com/cann/cann-recipes-train/blob/master/docs/llm_pretrain/deepseekv32_pre_train_optimization.md)(Chinese). For TileLang operator replacement, refer to this [document](https://gitcode.com/cann/torchtitan-npu/blob/master/docs/feature_guides/tilelang_ops.md).
+This chapter describes eight training operators implemented by TileLang-Ascend for DeepSeek-V3.2. For model training, refer to this [document](../../../../train/llm_pretrain/deepseek_v32/en/deepseek-v32_pre_train_optimization.md). For TileLang operator replacement, refer to this [document](https://gitcode.com/cann/torchtitan-npu/blob/master/docs/feature_guides/tilelang_ops.md).
 
 ### 1. Rotary Position Embedding
 

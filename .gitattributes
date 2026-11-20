@@ -1,0 +1,6 @@
+train/**/*.png filter=lfs diff=lfs merge=lfs -text
+train/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+train/**/*.jpeg filter=lfs diff=lfs merge=lfs -text
+train/**/*.webp filter=lfs diff=lfs merge=lfs -text
+train/**/*.svg filter=lfs diff=lfs merge=lfs -text
+train/**/*.PNG filter=lfs diff=lfs merge=lfs -text

@@ -5,7 +5,7 @@
 
   ],
   "Train": [
-    { "model": "deepseek_v4", "subcategory": "pretrain", "docPath": "pretrain/deepseek_v4" }
+    { "model": "deepseek_v4", "subcategory": "llm_pretrain", "docPath": "llm_pretrain/deepseek_v4" }
   ],
   "Embodied_AI": [
     { "model": "vggt", "subcategory": "3d_vision", "docPath": "3d_vision/vggt" }
